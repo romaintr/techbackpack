@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>La gestion de projet digital: TECH BACKPACK</title>
+		<meta name="author" content="Romain Troche">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.shell{
+				background-color:rgba(0, 0, 0, 0.8) !important; 
+				color: black !important; 
+				color: green !important; 
+				text-align   : left !important;
+			}
+
+			.text{
+				 text-align:left !important; 
+				 font-size: 90% !important;
+			}
+
+			.note{
+				margin-top: 60px !important; ; 
+				text-align: right !important; ; 
+				font-size: 50% !important; ;
+			}
+
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#034F84">
+					<h1>TITRE PRINCIPAL </h1>
+
+					<h2> Titre du cours</h2>
+					<p>
+						<small>Romain Troche  / <a mailto="romain@spin-interactive.com">romain@spin-interactive.com</a></small>
+					</p>
+				</section>
+				
+				<section data-background="#034F84">
+					<h1>PLAN</h1>
+					<ul>
+						<li>Section 1 </li>
+						<li>Section 2</li>
+						<li>Section 3</li>
+					</ul>
+				</section>
+
+				<section data-background="images/haltcatchandfire.jpg" data-background-size="400px" data-background-repeat="repeat"  >
+					<h2 class="shell"> Titre section 1 </h2>
+					<div class="shell">
+					<ul>
+						<li> Titre 1  </li>
+						<li> Titre 2 </li>
+						<li> Titre 3 </li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background-video="video/internet_JT.mp4">
+				<h2>Videos</h2>
+			 	</section>
+
+			 	<section data-background="images/halt-and-catch-fire-season-3-joe.jpg"  >
+					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white" > TITRE 1 </h2>
+					<p style="background-color: rgba(0, 0, 0, 0.5); color:white"> 
+						text text text text text text text text text text text text text text text text text text text text text text 
+        				text text text text text text text text text text text text text text text text text text text text text text 
+        				text text text text text text text text text text text text text text text text text text text text text text 					
+					</p>
+				</section>
+				
+				<section data-background="#4d7e65" >
+					<h2> Titre  </h2>
+        			<p class="text">  
+        				text text text text text text text text text text text text text text text text text text text text text text 
+        				text text text text text text text text text text text text text text text text text text text text text text 
+        				text text text text text text text text text text text text text text text text text text text text text text 
+        			</p>
+        			<div class="note" >
+						Lien numéro 1 : <a href="#">Nom du site</a><br>
+						Lien numero 2 : <a href="#">Nom du site</a>
+					</div>
+				</section>
+				<section data-background="#034F84" >
+					<h2>Titre</h2>
+					<ul>
+						<li>text text text text text text text text text text text </li>
+						<li>text text text text text text text text text text text </li>
+						<li>text text text text text text text text text text text </li>
+						<li>text text text text text text text text text text text </li>
+					</ul>
+				</section>
+				<section data-background="https://media0.giphy.com/media/n7C5DOuH1m0iA/giphy.gif">
+						<h2>GIFs!</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
