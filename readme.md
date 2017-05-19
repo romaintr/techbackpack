@@ -14,22 +14,22 @@ Mieux comprendre les enjeux techniques d'un projet de communincation digital
 
 ### 01 Cours d'introduction
 
-Comment marche internet ?
-> Bref histoire de l'internet
-> Le réseau Internet et les protocole TCP/IP et HTTP
-> Différence entre web et internet 
-> Le client
-> Le serveur
+* Comment marche internet ?
+	* Bref histoire de l'internet
+	* Le réseau Internet et les protocole TCP/IP et HTTP
+	* Différence entre web et internet 
+	* Le client
+	* Le serveur
 
-Le bagage technique pour le chef de projet digital
-> Développement front-end VS back-end 
-> Site statique VS site dynamique 
-> Les langages front-end et back-end 
-> Les principaux CMS
-> Web application, application native ou application hybride 
-> Les principaux langages pour le mobile 
-> La librairie VS le framework VS le SDK 
-> API et Webservice 
+* Le bagage technique pour le chef de projet digital
+	* Développement front-end VS back-end 
+	* Site statique VS site dynamique 
+	* Les langages front-end et back-end 
+	* Les principaux CMS
+	* Web application, application native ou application hybride 
+	* Les principaux langages pour le mobile 
+	* La librairie VS le framework VS le SDK 
+	* API et Webservice 
 
-Tips & Tricks pour travailler avec une équipe de développeurs
+* Tips & Tricks pour travailler avec une équipe de développeurs
 
