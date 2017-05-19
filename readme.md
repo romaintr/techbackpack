@@ -13,6 +13,8 @@ Bienvenue sur le Techbackpack
 
 ## Cours 1 : Back To Basics !
 
+Presentation : https://romaintr.github.io/techbackpack/01_backtobasics/
+
 * Comment marche internet ?
 	* Bref histoire de l'internet
 	* Le réseau Internet et les protocole TCP/IP et HTTP
