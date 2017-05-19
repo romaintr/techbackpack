@@ -1,0 +1,534 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>La gestion de projet digital: TECH BACKPACK</title>
+		<meta name="author" content="Romain Troche">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.shell{
+				background-color:rgba(0, 0, 0, 0.8) !important; 
+				color: black !important; 
+				color: green !important; 
+				text-align   : left !important;
+			}
+
+			.text{
+				 text-align:left !important; 
+				 font-size: 90% !important;
+			}
+
+			.note{
+				margin-top: 60px !important; ; 
+				text-align: right !important; ; 
+				font-size: 50% !important; ;
+			}
+
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#034F84">
+					<h1>TECH BACKPACK  </h1>
+
+					<h3>LA CONDUITE DE PROJET DIGITAL</h3>
+					<h4>CMI MASTER 208 - 2017</h4>
+					<p>
+						<small>Romain Troche  / <a mailto="romain@spin-interactive.com">romain@spin-interactive.com</a></small>
+					</p>
+				</section>
+				
+				<section data-background="#034F84">
+					<h2>Romain Troche</h2>
+					<ul>
+						<li>CTO Spin Interactive  </li>
+						<li>CTO La Treebu  </li>
+						<li>Organisateur CTO Crunch </li>
+						<li>Consultant technique artiste Jazon Frings </li>
+						<li>Ingénieur mutlimédia IMAC</li>
+					</ul>
+					<br>
+					<div class="note" >
+						<i>CTO : Directeur Technique </i> <br>
+						Jazon Frings:<a href="http://www.jazonex.com"> jazonex.com </a>
+					</div>
+				</section>
+				<section data-background="#034F84">
+					<h1>PLAN</h1>
+					<ul>
+						<li>Comment marche internet ?</li>
+						<li>Le bagage technique pour la gestion de projet web</li>
+						<li>Chef de projet VS Développeurs:travailler avec une équipe de développeurs </li>
+					</ul>
+				</section>
+
+				<section data-background="images/haltcatchandfire.jpg" data-background-size="400px" data-background-repeat="repeat"  >
+					<h2 class="shell">Comment marche internet ? </h2>
+					<div class="shell">
+					<ul>
+						<li> Bref histoire de l'internet </li>
+						<li> Le réseau Internet et les protocole TCP/IP et HTTP </li>
+						<li> Différence entre web et internet </li>
+					    <li> Le client: Le navigateur web </li>
+					    <li> Le serveur </li>
+					</ul>
+					</div>
+				</section>
+				
+					<section data-background-video="video/internet_JT.mp4">
+			 		</section>
+				<section data-background="images/Docteur-Folamour-film.jpg"  >
+					<h2 style="background-color: rgba(0, 0, 0, 0.5);color:white" > HISTOIRE INTERNET </h2>
+					<p style="background-color: rgba(0, 0, 0, 0.5); color:white"> 
+							Internet est né en 1969 sous le nom DARPANET <br><br>
+							Le réseau devait assurer les échanges d'informations entre les centres névralgiques américains
+							en cas d'attaque nucléaire soviétique.<br><br>
+							Si l'un ou plusieurs des sites venait à être détruit, les messages parviendraient aux destinataires par des itinéraires alternatifs.<br><br>
+					</p>
+				</section>
+
+				<section data-background="images/halt-and-catch-fire-season-3-joe.jpg"  >
+					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white" > HISTOIRE INTERNET </h2>
+					<p style="background-color: rgba(0, 0, 0, 0.5); color:white"> 
+							Il devient en 1972 ARPAnet, il relie des centres universitaires. C’est l’ancêtre d’Internet. <br><br>
+							Entre 1991 et 1993 à Genève, Tim Berners-Lee définit le protocole HTTP utilisé pour afficher les pages web Le Web est né et avec lui avec « Mosaic » le premier Navigateur Web. <br><br>
+
+							A partir de 1995 Internet est devenu accessible au grand public.<br><br> 							
+					</p>
+				</section>
+				
+				
+				<section data-background="images/ip-hostname.jpg" data-background-repeat="repeat" data-background-size="300px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.7); color:black" > Adresse IP </h2>
+					<p style="background-color:rgba(255, 255, 255, 0.7); color:black"> 
+				    Une adresse IP est un numéro unique permettant de communiquer dans un réseau. 
+
+					<br><br>Il ne peut pas avoir plusieurs ordinateurs avec la même adresse IP dans un même réseau. On peut comparer l’adresse IP à un numéro de téléphone
+					<br><br>
+
+					Afin de facililter l'utilsisation du réseau, il existe un systéme d'adresse plus explicite qui sont les noms de domaines.
+						
+					</p>
+				</section>
+
+				<section data-background="images/mystviewtwo.jpg" data-background-repeat="repeat" data-background-size="300px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.7); color:black" > Protocole DNS </h2>
+
+						<p style="background-color:rgba(255, 255, 255, 0.7); color:black ; "> 
+					
+							Le protocole DNS   permet d'établir la correspondance entre le nom de domaine et l'adresse IP des machines d'un réseau via un serveur de nom de domaine<br><br>
+
+						 L'ICANN  est l'organisme qui gére les noms de domaine <br><br>
+							L'enregistrement d'un nom de domaine se fait via un REGISTAR <br>
+						</p>
+				
+					
+							
+						
+					</p>
+					<div class="note" >
+						Consultation du registre : <a href="http://www.afnic.fr/fr/produits-et-services/services/whois/">WHOIS</a><br>
+						Exemple de registar<a href="https://www.gandi.net">www.gandi.net</a>
+					</div>
+				</section>
+				<section data-background="images/tcpip.png" data-background-repeat="repeat" data-background-size="300px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.7); color:black" >Protocole TCP/IP  </h2>
+					
+					<p style="background-color:rgba(255, 255, 255, 0.9);  color:black"> 
+						TCP veut dire Transmission Control Protocole <br>
+						<br>TCP/IP représente l'ensemble des règles de communication sur internet afin de pouvoir acheminer des paquets de données d’un ordinateur à un autre, en s’appuyant sur les adresses IP des ordinateurs.
+					</p>
+				</section>
+
+			 <section data-background-video="video/reseaux_cpasocier.mp4">
+			 </section>
+				
+				
+				<section data-background="images/internet1.jpg" >
+					<h2 style="background-color:rgba(0, 0, 0, 0.5); color:white" >Protocole HTTP </h2>
+					<p style="background-color:rgba(0, 0, 0, 0.5);  color:white">  
+          				HTTP a été inventé par Tim Berners-Lee avec les adresses Web et le langage HTML pour créer le World Wide Web. 
+          				<br><br>Le protocole HTTP utilise le protocole TCP/IP  pour  permettre un transfert de fichiers (essentiellement au format HTML et des images )  entre un navigateur (le client) et un serveur Web 
+          				<br><br>Le fichier à transférer est localisé grâce à une adresse appelée URL
+          				<br>
+					</p>
+				</section>
+				
+				<section data-background="images/World_Wide_Web_by_phoenixkeyblack.jpg"  >
+					<h2  style="background-color:rgba(0, 0, 0, 0.7); color:white" " > Différence entre web et internet  </h2>
+
+        			<p  style="background-color:rgba(0, 0, 0, 0.7); color:white" >
+        			<br>Internet n'est rien d'autre qu'un réseau de transport de données. Le web est construit au dessus d'internet qui l'utilise  pour transporter les données. 
+        			<br><br>
+        	
+        			</p>
+				</section>
+				<section data-background="images/World_Wide_Web_by_phoenixkeyblack.jpg"  >
+					<h2  style="background-color:rgba(0, 0, 0, 0.7); color:white" " > Différence entre web et internet  </h2>
+						<p  style="background-color:rgba(0, 0, 0, 0.7); color:white" >
+        		Plein d'autres applications que le web sont construites au dessus d'internet:  <br>
+						le mail (protocoles SMTP, POP3...) <br>
+						le chat (protocoles Jabber, AIM...) <br>
+						le  transfert de fichier (protocoles FTP...) <br>
+						les VPN (pour relier des réseaux informatique privés) <br>
+        			</p>
+				</section>
+				
+				<section data-background="images/browserslogos.png" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le client: le navigateur web </h2>
+					<p  style="background-color:rgba(255, 255, 255, 0.9);  color:black" > 
+							Le but principal d'un navigateur est de <b>récupérer</b> depuis un serveur le fichier demandé par l'utilisateur et de <b> l'afficher </b> dans sa fenêtre.
+						
+					</p>
+				</section>
+				<section data-background="images/browserslogos.png" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le client: le navigateur web </h2>
+					<p  style="background-color:rgba(255, 255, 255, 0.9);  color:black" > 
+							
+					 		La façon dont le navigateur interprète et affiche les fichiers HTML est précisée dans les spécifications HTML et CSS. 
+						<br><br>
+					 		Ces spécifications sont maintenues par le l'organisation W3C (World Wide Web Consortium), organisation des normes du Web.
+					</p>
+					<div class="note">
+							Consultation du registre : <a href="http://www.afnic.fr/fr/produits-et-services/services/whois/">WHOIS</a><br>
+
+					</div>
+				</section>
+
+				<section data-background="images/browserslogos.png" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le client: le navigateur web </h2>
+        			<p style="background-color:rgba(255, 255, 255, 0.9);  color:black" > Les principaux composants d'un navigateur sont :
+          				<br>Le moteur de rendu = HTML+CSS
+          				<br>Le réseau: protocole HTTP 
+          				<br>L'interpréteur JavaScript 
+          			    <br>Le stockage de données: les cookies
+        			</p>
+        			<div class="note">
+        			Inspecteur d'élement 
+        			</div>
+				</section>
+				
+				<section data-background="images/serveur.jpg" data-background-repeat="repeat" data-background-size="200px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black" >Le serveur </h2>
+        			<p style="background-color:rgba(255, 255, 255, 0.9);  color:black" > 
+        				Le serveur HTTP est le logiciel prenant en charge les requêtes du protocole HTTP. Le plus connu est Apache
+          				<br><br>Le plus souvent, un serveur Web utilise d'autres logiciels qui fonctionnent en collaboration.
+          				<br><br>Certaines combinaisons de logiciels de base sont connues sous différents acronymes, notamment celle d'Apache (serveur HTTP), MySQL (serveur de base de données) et PHP (langage de programmation)
+        			</p>
+				</section>
+		
+				<section  data-background="images/halt-and-catch-fire-mutiny.jpg" data-background-repeat="repeat" data-background-size="400px" >
+					
+					<h3 class="shell" style="margin-top:00px;">
+						Le bagage technique <br>
+						Pour le chef de projet digital 
+					</h3>
+					<div class="shell" style="margin-top:200px;">
+						
+						> Développement front-end VS back-end <br>
+						> Site statique VS site dynamique <br>
+						> Les langages front-end et back-end <br>
+						> Les principaux CMS<br>
+						
+					</div>
+					
+				</section>
+				<section data-background="#4d7e65" >
+					<h2>Développement front end VS back end  </h2>
+        			<p class="text">  
+        				 Ce sont  deux profils types que l’on retrouve dans la plupart des agences web de nos jours.
+          				<br><br>Lorsque l’on parle de «Front-End», il s’agit  des éléments du site que l’on voit à l’écran et avec lesquels on peut interagir.
+        				<br><br>Les éléments du développement front-end sont composés de HTML, CSS et de Javascript contrôlés par le navigateur web.
+        			</p>
+				</section>
+        <section data-background="#4d7e65" >
+          <h2 >Développement front end VS back end  </h2>
+          <p class="text"> 
+           Le Back-End, c’est la partie du code qui est exécutée par le serveur permettant de générer une page HTML 
+          <br><br>
+          Le travail du serveur sera codé dans un langage propre à lui : le langage serveur 
+          <br><br>
+          Les données sont stockées dans une bases de données
+          <br>
+          </p>
+        </section>
+				<section data-background="#4d7e65" >
+					<h2>Page statique  </h2>
+        			<p class="text" > 
+          			Ce n'est pas une page sans mouvements ou sans animations, mais une page visible 
+          			telle qu'elle a été conçue. Ces pages peuvent présenter toute forme de contenu, images, 
+          			musique, vidéo etc... mais elles sont toujours présentées de la même façon.
+          			Elles ne changent pas et c'est en ce sens qu'elles sont statiques.
+        			</p>
+				</section>
+				<section data-background="#4d7e65">
+					<h2>Page dynamique  </h2>
+        			<p class="text" > 
+          			Elles permettent de présenter les informations de différentes manières selon l'interaction du visiteur,
+          			ou le contenu publié depuis un backoffice.
+					Les pages sont alors construites "à la volée" grâce à une programmation conçue par le développeur.
+					Le contenu est issu d'une base de données puis mis en page en temps réel. 
+					<br><br>C'est le cas par exemple d'un site d'E-commerce: présentation des articles par thèmes, couleurs, prix etc... 
+					C'est également le cas des blogs, des sites d'informations, des sites participatifs comme Facebook ou Instagram où les visiteurs génèrent le contenu du site.
+        			</p>
+				</section>
+			
+				<section data-background="#4d7e65">
+					<h2>Langages front-end  </h2>
+        			<p class="text"> 
+          			Le HTML ( Hypertext Markup Language) est un format de données conçu pour présenter les pages web.
+          			Le HTML permet de structurer sémantiquement le contenu d'une page web et d'inclure des ressources multimédias 
+          			(images,vidéos,sons) ainsi que  des formulaires
+          			<br><br>Le HTML ne permet pas de mettre en page le contenu, c'est le role du CSS qui est un langage permettant de 
+          			gérer le style visuel ( le design de la page )
+          			<br> Le HTML et le CSS vont donc de pair.
+				</section>
+				
+				<section data-background="#4d7e65" >
+					<h2>Langages front-end  </h2>
+        			<p class="text"> 
+          			Le HTML5 et le CSS3 correspondent à la dernière version dont les spécifications sont à l'étude depuis 2008
+          			<br><br>
+          			Le HTML5/CSS3 permet d'intégrer des pistes audios et vidéos dans une page sans passer par Flash. 
+          			Il permet également d'intégrer des animations 2D et 3D et de créer des jeux entièrement en HTML5.
+          			Il permet aussi un stockage des données pour un fonctionnement hors-connexion ce qui est essentiel pour construire une webapp
+				</section>
+				
+				<section data-background="#4d7e65">
+					<h2>Langages front-end  </h2>
+        			<p class="text"> 
+          			Un dernier élément pour créer des pages interactives: le Javascript.
+          			Ces scripts sont gérés et exécutés par le navigateur web sans faire appel aux ressources du serveur.
+          			<ul>
+          				<li>Animer texte et image</li>
+          				<li>Réagir aux événements de la souris </li>
+          				<li> Réaliser des calculs </li>
+          				<li> Gérer des menus </li>
+          			</ul>
+          			<br><br>          			
+          			Essentiel pour développer une Web App et la rendre interactive
+
+        			</p>
+				</section>
+				<section data-background="#4d7e65">
+					<h2>Langages front-end  </h2>
+        			<p class="text"> 
+          			Une Web App est une application web accessible via internet et n'a pas besoin d'être téléchargée.
+          			Généralement développée pour le mobile elle possède des fonctionnalités spécifiques au mobile grâce aux nouvelles fonctionnalités offertes par HTML5
+          			(accés à la webcam, géolocalisation via GPS, accés aux photos ... ) 
+          			
+        			</p>
+				</section>
+				<section data-background="rgb(158, 70, 36)">
+          				<h2>Langages back-end PHP </h2>
+          			   <p class="text"> PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (acronyme récursif), est un langage de programmation libree principalement , utilisé pour produire des pages Web dynamiques via un serveur HTTP
+          			   	<br><br>
+          			   	PHP a permis de créer un grand nombre de sites web célèbres, comme Facebook, YouTube, Wikipedia, Google,[réf. nécessaire]. Il est aujourd'hui considéré comme la base de la création des sites Internet dits dynamiques
+          			             			   	<br><br>Le script php est executé sur le serveur et non sur le poste client (contrairement par exemple au javascript). 
+
+          			   </p>
+				</section>
+
+				<section data-background="rgb(158, 70, 36)">
+					<h2>Langages back-end MYSQL </h2>
+						
+          			<p class="text">MySQL est un serveur de base de données. MySQL est un SGBD (Gestionnaire de base de données en français). Il permet de stoker des données en masse et pouvoir les utiliser à volonté en les triant comme on le souhaite.
+          			Le couple PHP/MySQL est très utilisé par les sites web et proposé par la majorité des hébergeurs Web. <br>
+          		</p>
+				</section>
+
+				<section  data-background="images/template.png" data-background-repeat="repeat" data-background-size="600px" >
+					<h3 style="background-color:rgba(255, 255, 255, 0.9);  color:black">Langages back-end : les templates  </h3>
+						
+          			<p class="text" style="background-color:rgba(255, 255, 255, 0.9);  color:black">Un template (parfois appelé layout) est strucutre sans contenu dont les éléments statiques sont déjà positionnés ( header/footer/colonnes/textes ... )
+          			<br><br>
+          			Il peut y avoir plusieurs templates dans un site web : un pour la page d’accueil, un pour une page de contenu classique, un pour une fiche produit ....
+          			<br><br>
+          			Les templates sont au centre du fonctionnement des sites dynamiques.
+          			</p>
+				</section>
+				
+				
+				<section data-background="images/cmslogo.jpg" data-background-repeat="repeat" data-background-size="400px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black"  >Les CMS </h2>
+						
+          			<p class="text" style="background-color:rgba(255, 255, 255, 0.9);  color:black" >
+          			L'acronyme CMS signifie Content Management System, pour système de gestion de contenu. 
+          			<br>Les CMS offrent la possibilité de construire un site web à partir d’une interface de gestion simplifiée accessible depuis un backoffice
+          			<br><br> De cette manière, il est possible de maintenir et faire vivre un site web sans la moindre connaissance technique dans les métiers du Web.
+
+          		</p>
+				</section>
+				
+				<section data-background="images/cmslogo.jpg" data-background-repeat="repeat" data-background-size="400px" >
+					<h2 style="background-color:rgba(255, 255, 255, 0.9);  color:black"  >Les CMS </h2>
+						
+          			<p class="text" style="background-color:rgba(255, 255, 255, 0.9);  color:black" >
+          				<br>L’édition des pages est réalisée avec des éditeurs WYSIWYG.
+          				 <br>Les gestionnaires de contenu proposent généralement des modules de gestion des menus de navigation, des images et des fichiers.
+          				 <br>La mise en page est réalisée à partir de modèles (templates) contenus dans des thèmes.
+          				 <br> La chaine de publication  (workflow) est gérée grâce à une hiérarchie d'utilisateurs, rôles et permissions (utilisateur anonyme, administrateur, contributeur, etc.) ;</li>
+					<br>
+          			</p>
+				</section>
+
+        <section  data-background="images/silicon-valley-season-2-680x383.png" data-background-repeat="repeat" data-background-size="400px" >
+          
+          <h3 class="shell" style="margin-top:00px;">
+            Le bagage technique <br>
+            Pour le chef de projet digital 
+          </h3>
+          <div class="shell" style="margin-top:200px;">
+            
+            > Web application, application native ou application hybride <br>
+            > Les principaux langages pour le mobile <br>
+            > La librairie VS le framework VS le SDK <br>
+            > API et Webservice <br>
+            
+          </div>
+          
+        </section>
+  
+				<section data-background="#034F84" >
+					<h2>Application mobile </h2>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/EHWRkuDlNOE" frameborder="0" allowfullscreen></iframe>
+				</section>
+				<section data-background="images/zack.jpg" data-background-repeat="repeat" data-background-size="400px" >
+					         <div style="background-color:rgba(0, 0, 0, 0.5);  color:white" >
+
+          <h2>Application mobile </h2>
+            <ul>
+						<li>1993: IBM créé le premier smartphone</li>
+						<li>1997: Démarrage du webmobile avec le WAP( Wireless Application Protocol)</li>
+						<li>1999: Démarrage du Wifi et du HotSpot</li>
+						<li>2007: Apple lance l'IPHONE</li>
+						<li>2008: Apple lance l'Appstore</li>
+						<li>2008: Sortie des premiers téléphones sous Android</li>
+						<li>2010: Apple lance l'IPAD</li>
+					</ul>
+          </div>
+				</section>
+				
+				<section data-background="images/market.jpg" data-background-repeat="repeat" data-background-size="400px" >
+					<div style="background-color:rgba(0, 0, 0, 0.5);  color:white" >
+
+          <h2>Application native</h2>
+          <ul>
+						<li>Logiciel sur mobile ou tablette utilisable avec ou sans connexion internet</li>
+						<li>Téléchargeable depuis des stores: Apple Store, Google Play</li>
+						<li>Ces applications sont conçues pour  plateforme grâce au kit de développement SDK</li>
+						<li>Chaque kit de développement utilise un langage différent</li>
+						<li>Apple :SDK IOS 5 , langage Objective-C </li>
+						<li>Google: SDK Android , langage java </li>
+					</ul>
+          </div>
+				</section>
+				
+				<section data-background="#034F84" >
+					<h2>Web app</h2>
+        			<ul>
+						<li>Application utilisée via Internet sur le navigateur web de l'appareil</li>
+						<li>Pas besoin d'être téléchargée ou installée pour fonctionner</li>
+						<li>Développée avec des langages webs: HTML5/CSS/Javascript </li>
+					</ul>
+				</section>
+				<section data-background="#034F84">
+					<h2>Application hybride</h2>
+        			<p> 
+          			L'application hybride dite 'encapsulée' correspond à la fusion de l'application mobile native et la web app
+          			<br><br>
+          			La capsule est développée dans le langage natif de l'appareil ( Java, Objective C ). Une  webapp HTML5 est injectée dans l'application du téléphone
+          			<br><br>
+					L'application est ainsi disponible sur tous les différents stores
+          			</p>
+          			
+				</section>
+				<section data-background="#034F84" >
+					<h2>Application hybride</h2>
+					<ul>
+						<li>Une code unique pour plusieurs plateformes: IOS/ANDROID/WINDOWS </li>
+						<li>Baisse du cout du développement et de maintenance </li>
+						<li>Pour accéler le développement des frameworks sont disponibles: Phonegap</li>
+						<li>La webapp et la capsule peuvent communique ensemble: GPS,PHOTOS, CONTACT.... </li>
+					</ul>
+				</section>
+				<section data-background="images/API-icon.png" data-background-repeat="repeat" data-background-size="400px">
+          <div style="background-color:rgba(0, 0, 0, 0.4);  color:white" >
+
+					<h2>API & Webservice</h2>
+        			<p> 
+						API : Application Programmable Interface, traduisez "interface de programmation"  <br><br>
+						Elle Permet d’accéder aux services d’une application ou d'un service en ligne  <br><br>
+						Le conducteur n'a pas à connaître le fonctionnement mécanique du moteur d'un véhicule pour pouvoir le conduire. 
+					</p>
+          </div>
+				</section>
+				
+				<section data-background="#034F84" >
+					<h2>API & Webservice</h2>
+					<ul>
+						<li>Graph API de Facebook: <a href="https://developers.facebook.com/tools/explorer/145634995501895/?method=GET&path=me%3Ffields%3Did%2Cname">API explorer</a></li>
+						<li><a href=" https://graph.facebook.com/v1.0/me/friends?access_token= "> https://graph.facebook.com/v1.0/me/friends?access_token= </a></li>
+						<li>Google Maps API</li>
+						<li>Twitter API</li>
+					</ul>
+				</section>
+				
+				<section data-background="#034F84">
+					<h2>Chef de projet VS Développeurs</h2>
+					<h3><iframe width="560" height="315" src="https://www.youtube.com/embed/BKorP55Aqvg" frameborder="0" allowfullscreen></iframe></h3>
+					
+		
+				</section>
+				<section data-background="#034F84">
+					<h3>Travailler avec une équipe de développeurs</h3>
+					
+					<ul>
+						<li>Le kick-off: donnez tous les éléments</li>
+						<li>Evaluation du temps de production: ne forcez pas la main</li>
+						<li>La production: soyez actif</li>
+						<li>La recette: restez zen</li>
+						<li>Le serveur de dev/test/prod : attention aux contenus</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
