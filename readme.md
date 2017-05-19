@@ -34,3 +34,31 @@ Presentation : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 * Tips & Tricks pour travailler avec une équipe de développeurs
 
+## Cours 2 : Welcome to the Matrix
+
+* Philosophie des workshops
+
+* Les outils du développeur
+	* La console Chrome
+	* L'editeur de texte
+	* Le terminal
+	* Git
+
+* La structure HTML
+	* Théorie
+	* Live-code
+	* Votre tour : Le Pitch Deck
+
+* Le fichier CSS
+	* Théorie
+	* Live-code
+	* Votre tour : Page d'introduction
+
+* Introduction à Bootstrap
+	* Théorie
+	* Live-code
+	* Votre tour : My first landing page
+	
+
+
+
