@@ -5,14 +5,13 @@ Bienvenue sur le Techbackpack
 
 ## OBJECTIF DU COURS
 
-Apprendre les bases de la programmation web 
-Connaitre les bonnes pratiques d'un projet web : de sa conception technique à sa mise en production
-Découvrir les outils du développeurs web
-Mieux comprendre les enjeux techniques d'un projet de communincation digital
+* Initiation à la programmation web 
+* Maitriser les termes techniques d'un projet web
+* Connaitre les bonnes pratiques techniques d'un projet web 
+* Découvrir les outils du développeurs web
+* Mieux comprendre les enjeux techniques d'un projet digital
 
-## Plan des cours
-
-### 01 Cours d'introduction
+## Cours 1 : Back To Basics !
 
 * Comment marche internet ?
 	* Bref histoire de l'internet
@@ -21,7 +20,7 @@ Mieux comprendre les enjeux techniques d'un projet de communincation digital
 	* Le client
 	* Le serveur
 
-* Le bagage technique pour le chef de projet digital
+* Le langage technique pour le chef de projet digital
 	* Développement front-end VS back-end 
 	* Site statique VS site dynamique 
 	* Les langages front-end et back-end 
