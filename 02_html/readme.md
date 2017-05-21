@@ -28,33 +28,37 @@
     <title>The Daily challenge</title>
   </head>
   <body>
-    <h1>The Daily Challenge</h1>
-    <h2>Tentez de nouvelles expériences !</h2>
-    <p>
-      <a href="#">Démarrez maintenant</a>
-    </p>
-    <h2>Un défi chaque jour</h2>
-    <p>Recevez <strong>de nouveaux challenges </strong> tous les jours </p>
-    <img src="https://media.giphy.com/media/AWv3UAFkgz39u/giphy.gif" alt="picture description" width="300">
-
-    <h2>Partagez vos exploits</h2>
-    <p></p>
-    <img src="https://media.giphy.com/media/pWfzRNzOfHOvu/giphy.gif" alt="picture description" width="300">
-
-    <h2>Suivez vos amis </h2>
-    <p></p>
-    <img src="" width="300">
-
-    <h2>Participatif</h2>
-    <p></p>
-    <img src="" width="300">
-
-    <p>Cette application est proposée le codecamp CMI Dauphine 2017 </p>
-
+    <header>
+      <h1>The Daily Challenge</h1>
+      Tentez de nouvelles expériences !
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">A propos </a></li>
+        <li><a href="#">Télécharger</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <article>
+          <h2>Un défi chaque jour</h2>
+          <p>Recevez <strong>de nouveaux challenges </strong> tous les jours </p>
+          <img src="https://media.giphy.com/media/AWv3UAFkgz39u/giphy.gif" alt="picture description" width="300">
+        </article>
+       </section>
+       <section>
+          <p> L'application sera prochainement disponible. Revenez nous voir rapidement ! </p>
+       </section>
+    </main>
+    <footer>
+      <p>Cette application est proposée le codecamp CMI Dauphine 2017 </p>
+    </footer>
   </body>
 </html>
 ```
 
 ### Les liens
 https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML
+
+http://41mag.fr/liste-des-balises-html5
 
