@@ -48,40 +48,256 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-background="#034F84">
-					<h1>TITRE PRINCIPAL </h1>
+					<h1>Techbackpack </h1>
 
-					<h2> Titre du cours</h2>
+					<h2> Welcome to the Matrix</h2>
 					<p>
 						<small>Romain Troche  / <a mailto="romain@spin-interactive.com">romain@spin-interactive.com</a></small>
 					</p>
 				</section>
 				
 				<section data-background="#034F84">
-					<h1>PLAN</h1>
+					<h1>Welcome to the Matrix<</h1>
 					<ul>
-						<li>Section 1 </li>
-						<li>Section 2</li>
-						<li>Section 3</li>
+						<li>Les outils du développeur</li>
+						<li>La structure HTML</li>
+						<li>Le fichier CSS</li>
+						<li>Introduction à Bootstrap</li>
 					</ul>
 				</section>
 
 				<section data-background="images/haltcatchandfire.jpg" data-background-size="400px" data-background-repeat="repeat"  >
-					<h2 class="shell"> Titre section 1 </h2>
+					<h2 class="shell"> Les outils du développeur </h2>
 					<div class="shell">
 					<ul>
-						<li> Titre 1  </li>
-						<li> Titre 2 </li>
-						<li> Titre 3 </li>
+						<li> Le navigateur et sa console </li>
+						<li> L'editeur de texte </li>
+						<li> Le terminal </li>
+						<li> Git </li>
 					</ul>
 					</div>
 				</section>
 
-				<section data-background-video="video/internet_JT.mp4">
-				<h2>Videos</h2>
-			 	</section>
+				<section data-background="images/haltcatchandfire.jpg" data-background-size="400px" data-background-repeat="repeat"  >
+					<h2 class="shell"> Comment ca marche </h2>
+					<div class="shell">
+					<ul>
+						<li> Un peu de blabla </li>
+						<li> Une demo </li>
+						<li> Vous testez </li>
+						<li> Have fun !  </li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> Le navigateur </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> Télécharger Google Chrome </li>
+        					<li> Ouvrire la console</li>
+        					<li> Changer un titre d'article </li>
+        				</ul>
+        			</p>
+        			<div class="note" >
+						Google Chrome: <a href="https://www.google.fr/chrome/browser/desktop/">www.google.fr/chrome/browser/desktop/</a><br>
+					</div>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> L'éditeur de texte  </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> Télécharger Sublime Text </li>
+        					<li> Créér un dossier de travail </li>
+        					<li> Créér son premier fichier HTML </li>
+        					<li> Afficher sa page la navigateur </li>
+        				</ul>
+        			</p>
+        			<div class="note" >
+						Sublime Text : <a href="https://www.sublimetext.com<">www.sublimetext.com</a><br>
+					</div>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> Front-end: 3 langages </h2>
+	    			<p class="text">  
+	    				<ul>
+	    					<li> HTML: Structure le contenu </li>
+	    					<li> CSS : Design le contenu </li>
+	    					<li> JAVASCRIPT : Anime le contenu </li>
+	    				</ul>
+	    			</p>
+				</section>
+				<section data-background="#4d7e65" >
+					<h2> HTML </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> Structure le contenu </li>
+        					<li> Qualifie le contenu </li>
+        					<li> Le browser applique les instructions  </li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La structure d'une page HTML
+							<html>
+
+							  <head>
+							  	Les informations intelligentes 
+							  </head>
+
+							  <body>
+							  	Le contenu de ma page web à afficher
+							  </body>
+
+							</html>	  					
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> La balise Head</h2>
+        			<p class="text">
+        				Toutes les informations nécessaires qui ne sont pas directement affichéee
+        				<ul>
+        				  <li> Le titre du navigateur </li>
+        					<li> L'auteur, la description </li>
+        					<li> Les liens vers les fichiers externes CSS / JS </li>
+        					<li> Les codes javascript   </li>
+        				</ul>
+        			</p>
+        		<aside class="notes">
+							Demo sur spin-interactive.com dans Google
+							Demo sur Facebook
+						</aside>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Comment devenir développeur HTML ?
+							
+						```
+						<element attribute="value"> Plop Plop Plop Plop </element>
+						```
+						* Une syntaxe simple
+						* Une balise HTML encapsule le contenu
+						* Attribute est une option de la balise
+							
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Exemple : Faire un lien
+						```
+						<a href="http://www.spin-interactive.com" target="_blank">
+							Spin Interactive
+						</a>
+						```
+						* Le balise est un lien son nom est "a"
+						* Il a deux attributs "href" et "target"
+						* Il a un contenu "Spin Interactive"
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### A savoir
+
+						Certains attributs n'ont pas de balises fermantes
+
+						```
+						<img src="monsuperlogo.jpg" alt="Mon logo">
+						```
+
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Titre
+
+						```
+						<h1>[...]</h1> 
+						<h2>[...]</h2>
+						<h3>[...]</h3>
+						<h4>[...]</h4>
+						<h5>[...]</h5>
+						<h6>[...]</h6>
+						```
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Paragraphe
+
+						```
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						  Veritatis laboriosam mollitia autem at ab omnis iure quis
+						  asperiores inventore eos nam aut iusto officiis deserunt
+						  nihil, sequi tempore impedit quae?
+						</p>
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Texte
+
+						```
+						EM est mise en <em> exergue </em>  (italic),
+						STRONG mise en exergue <strong> plus forte</strong>(gras)
+						```
+					</script>
+				</section>
+				
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La liste
+						Certaines balises ont des balises imbriquées
+
+						```
+							<ul>
+							  <li>Apprendre l'HTML </li>
+							  <li>Apprendre le CSS </li>
+							  <li>Publier une page web </li>
+							  <li>Faire un site internet </li>
+							</ul>
+						```
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> A votre tour ! </h2>
+        			<p class="text">
+        		    <h2>Tentez de nouvelles expériences !</h2>
+
+        				<ul>
+        					<li> Un nouveau défi chaque jour </h2></li>
+        					<li> Partagez vos exploits</li>
+        					<li> Suivez vos amis  </li>
+        					<li> Lancer des défis  </li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> The Daily Challenge </h2>
+        			<p class="text">
+        			Indentez son code est trés important !
+        				<ul>
+        					<li> Il doit etre lisible </li>
+        					<li> Il sera plus facile de le faire évoluer ou de le debugguer </li>
+        					<li> Prenez les bonnes habitudes dés le début </li>
+        				</ul>
+        			</p>
+				</section>
 
 			 	<section data-background="images/halt-and-catch-fire-season-3-joe.jpg"  >
-					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white" > TITRE 1 </h2>
+					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white" > L'editeur de texte </h2>
 					<p style="background-color: rgba(0, 0, 0, 0.5); color:white"> 
 						text text text text text text text text text text text text text text text text text text text text text text 
         				text text text text text text text text text text text text text text text text text text text text text text 
@@ -90,7 +306,7 @@
 				</section>
 				
 				<section data-background="#4d7e65" >
-					<h2> Titre  </h2>
+					<h2> L'editeur de texte  </h2>
         			<p class="text">  
         				text text text text text text text text text text text text text text text text text text text text text text 
         				text text text text text text text text text text text text text text text text text text text text text text 
