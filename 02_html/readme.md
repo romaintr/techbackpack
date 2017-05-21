@@ -28,16 +28,16 @@
     <title>The Daily challenge</title>
   </head>
   <body>
-    <header>
-      <h1>The Daily Challenge</h1>
-      Tentez de nouvelles expériences !
-    </header>
     <nav>
       <ul>
         <li><a href="#">A propos </a></li>
         <li><a href="#">Télécharger</a></li>
       </ul>
     </nav>
+    <header>
+      <h1>The Daily Challenge</h1>
+      Tentez de nouvelles expériences !
+    </header>
     <main>
       <section>
         <article>
@@ -59,9 +59,9 @@
 
 ### Les liens
 
-[Les balises HTML ](http://41mag.fr/liste-des-balises-html5)
+[Liste de balises HTML ](http://41mag.fr/liste-des-balises-html5)
+[Cours d'intro HTML -  Mozilla Developer Network  ](https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML)
 
-https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML
 
 
 
