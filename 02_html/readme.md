@@ -58,7 +58,10 @@
 ```
 
 ### Les liens
+
+[Les balises HTML ](http://41mag.fr/liste-des-balises-html5)
+
 https://developer.mozilla.org/fr/Apprendre/HTML/Balises_HTML
 
-http://41mag.fr/liste-des-balises-html5
+
 
