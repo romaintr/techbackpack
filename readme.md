@@ -36,7 +36,8 @@ Presentation : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 ## Cours 2 : Welcome to the Matrix
 
-* Philosophie des workshops
+Presentation : https://romaintr.github.io/techbackpack/02_welcometothematrix/
+
 
 * Les outils du développeur
 	* La console Chrome
