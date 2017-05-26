@@ -38,7 +38,6 @@ Presentation : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 Presentation : https://romaintr.github.io/techbackpack/02_welcometothematrix/
 
-
 * Les outils du développeur
 	* La console Chrome
 	* L'editeur de texte
