@@ -417,7 +417,7 @@
         			<p class="text">
         			Construisez votre premiere page présentant The Daily Challenge
         				<ul>
-        					<li> Récupérer une premiere structure sur ce  <a href="https://romaintr.github.io/techbackpack/02_html/" target="_blank"> lien </a> </li>
+        					<li> Récupérer une premiere structure sur ce  <a href="https://romaintr.github.io/techbackpack/02_welcometothematrix/" target="_blank"> lien </a> </li>
         					<li> Ajoutez les balises auteur et description dans la header </li>
         					<li> Insérez les article qui présentent les fonctionnalités  </li>
         					<li> Cherchez des images sur giphy  </li>
@@ -436,6 +436,172 @@
         				</ul>
         			</p>
 				</section>
+				<section data-background="#034F84" >
+					<h2> CSS </h2>
+        			<p class="text">
+        				C'est un langage permettant d'appliquer différents styles à votre code HTML.<br>
+        				<ul>
+        					<li> Supprimez la CSS depuis la console</li>
+        					<li> Ouvrez votre fichier index.html et ajouter la balise &lt;style&gt; dans le &lt;head&gt; <head> </li>
+        					<li> Créez un fichier style.css à coté du fichier index.html et ajouter la régle
+        				</ul>
+        				<br><br>
+        				<code class="hljs" >p { color: red; }</code>
+        			</p>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La syntaxe d‘une règle CSS
+							
+						```
+						p{
+							color: red;
+							width: 500px;
+							border: 1px solid black;
+						}
+						```
+						* p est le selecteur
+						* color est la propriété
+						* red est la valeur
+						* attention au {} , : et ;
+							
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La syntaxe d‘une règle CSS
+							
+						```
+						p,li,h1 {
+							color: red;
+						}
+						```
+						* Vous pouvez appliquer la même régle sur plusieurs éléments
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Les sélecteurs CSS
+						
+						Sélecteur d‘une balise	
+						```
+						h2 { color: black  }
+						```
+						Sélecteur d‘une classe
+						```
+						.feature-title { color: green }
+						```
+						Sélecteur d‘un ID;
+						```
+						#footer { color: white ; background-color: black }
+
+						```
+							
+					</script>
+				</section>
+	
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Couleurs
+						Mots clés	
+						```
+						h2 { color: green; }
+
+						```
+						Hexadecimal
+						```
+						h2 { color: #00FF00;  }
+						```
+						Red Green Blue
+						```
+						h2 { color: #rgb(0,255,0); }
+						```
+						Red Green Blue Alpha
+
+						```
+						h2 { color: #rgba(0,255,0,1.0); }
+
+						```	
+							
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Familles de police
+							
+						```
+						h2 {font-family: "Times New Roman", "Georgia", Serif; }
+
+						```
+						* 2 polices par ordre de préférence
+						* 1 police générique
+						* serif, sans-serif, monospace, cursive and fantasy
+							
+					</script>
+					<div class="note" >
+					 	<a href="https://www.w3.org/Style/Examples/007/fonts.fr.html#font-family">Familles de police</a><br>
+					</div>
+
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Font size
+							
+						```
+							font-size: 12px;
+							font-size: 0.8em;
+							font-size: 80%;
+						```
+						* Priviligiez le em qui est relatif par rapport au px est fixe
+						* le px sera généralement utiliser pour des éléments de bordures
+						* le % pour des conteneurs à tailles variables
+							
+					</script>
+
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						###  Mise en forme de texte
+						```
+						font-style : normal | italice | oblique
+					
+						/* graisse d’une police.*/
+						font-weight : normal | bold | 900
+
+						letter-spacing : 2px;
+
+						/* ligne décorative */
+						text-decoration : overline | line-through | underline
+
+						/* ombre portée */
+						text-shadow : text-shadow: 2px 2px #ff0000;
+
+						/* capitalisation du texte */
+						text-transform : uppercase | lowercase | capitalize
+						```
+						[Mozilla - Mettre en forme du texte ](https://developer.mozilla.org/fr/Apprendre/CSS/Comment/Mettre_en_forme_du_texte)
+						
+						[W3schools ](https://www.w3schools.com/cssref/pr_font_font-style.asp)
+
+					</script>
+
+
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### CSS 
+						
+				
+							
+					</script>
+					<div class="note" >
+					 	<a href="https://www.w3.org/Style/Examples/007/fonts.fr.html#font-family">Familles de police</a><br>
+					</div>
+
+				</section>
+
+
 
 			 	<section data-background="images/halt-and-catch-fire-season-3-joe.jpg"  >
 					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white" > L'editeur de texte </h2>
