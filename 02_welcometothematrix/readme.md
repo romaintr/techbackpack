@@ -28,26 +28,26 @@
     <title>The Daily challenge</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">A propos </a></li>
-        <li><a href="#">Télécharger</a></li>
-      </ul>
-    </nav>
     <header>
-      <h1>The Daily Challenge</h1>
-      Tentez de nouvelles expériences !
+      The Daily Challenge
+      <nav>
+        <ul>
+          <li><a href="#apropos">A propos </a></li>
+          <li><a href="#download">Télécharger</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section>
-        <article>
+      <section id="baseline">
+        <h1>Tentez de nouvelles expériences !</h1>
+        <p>
+          <a href="#">Démarrez maintenant</a>
+        </p>
+      </section>
+      <section id="about">
           <h2>Un défi chaque jour</h2>
           <p>Recevez <strong>de nouveaux challenges </strong> tous les jours </p>
           <img src="https://media.giphy.com/media/AWv3UAFkgz39u/giphy.gif" alt="picture description" width="300">
-        </article>
-       </section>
-       <section>
-          <p> L'application sera prochainement disponible. Revenez nous voir rapidement ! </p>
        </section>
     </main>
     <footer>
@@ -55,6 +55,38 @@
     </footer>
   </body>
 </html>
+```
+
+### La mise en forme
+
+```
+/* style.css */
+body{
+  background: rgb(245,245,245);
+  color: green;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+h1{
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 8px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
 ```
 
 ### Les liens

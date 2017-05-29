@@ -35,9 +35,49 @@ a:hover {
   color: rgb(225, 0, 152);
 }
 
-/*
-header{
+#logo{
   color: #EB503E;
   font-size: 35px;
   font-family: 'Pacifico', cursive;
+}
+
+/*
+#baseline{
+  background-color: #41A3C0;
+  text-align: center;
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }*/
+/*
+#baseline h1 {
+  color: white;
+  font-size: 50px;
+}
+*/
+/*
+#baseline a {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+}
+*/
+/*
+#apropos{
+  width: 50%;
+  margin: 0 auto;
+}
+*/
+/*
+.feature{
+  border-radius: 3px;
+  border: 1px solid #F2F2F2;
+  background: #FAFAFA;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+*/
+
+

@@ -1,0 +1,89 @@
+/* style.css */
+
+body{
+  background: #fff;
+  color: #000; 
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav{
+  font-size: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+} 
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  color:  #41A3C0; 
+  font-weight: bolder;
+  font-size: 2em;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #3b4563;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+p{
+  color: #8e9bac;
+}
+a { 
+  color: #29324B;
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(225, 0, 152);
+}
+
+#logo{
+  color: #EB503E;
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
+}
+
+#baseline{
+  background-color: #41A3C0;
+  text-align: center;
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+#baseline h1 {
+  color: white;
+  font-size: 50px;
+}
+
+#baseline a {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#apropos{
+   width: 50%;
+  margin: 0 auto;
+}
+
+.feature{
+  border-radius: 3px;
+  border: 1px solid #F2F2F2;
+  background: #FAFAFA;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+  
+}
+
+.democard{
+  border: 1px solid #F2F2F2;
+  background: #41A3C0;
+  position: relative;
+  margin: 15px 0;
+  padding: 15px;
+  text-align: center;
+  height: 100px;
+}
+
+
