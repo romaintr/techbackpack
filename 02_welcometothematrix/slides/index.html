@@ -1,0 +1,704 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>LE TECH BACKPACK : HTML & CSS</title>
+		<meta name="author" content="Romain Troche">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.shell{
+				background-color:rgba(0, 0, 0, 0.8) !important; 
+				color: black !important; 
+				color: green !important; 
+				text-align   : left !important;
+			}
+
+			.text{
+				 text-align:left !important; 
+				 font-size: 90% !important;
+			}
+
+			.note{
+				margin-top: 60px !important; ; 
+				text-align: right !important; ; 
+				font-size: 50% !important; ;
+			}
+
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#034F84">
+					<h1>Techbackpack </h1>
+
+					<h2> Welcome to the Matrix</h2>
+					<p>
+						<small>Romain Troche  / <a mailto="romain@spin-interactive.com">romain@spin-interactive.com</a></small>
+					</p>
+				</section>
+				
+				<section data-background="images/matrix-animated-gif.gif"  >
+					<h1 style="background-color: rgba(0, 0, 0, 0.1);color:white">Welcome to the Matrix</h1>
+					<ul style="background-color: rgba(0, 0, 0, 0.1);color:white">
+						<li>Les outils du développeur</li>
+						<li>La structure HTML</li>
+						<li>Le fichier CSS</li>
+						<li>Introduction à Bootstrap</li>
+					</ul>
+				</section>
+
+				<section data-background="images/coding.gif" data-background-size="400px" data-background-repeat="repeat"  >
+					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white"> Les outils du développeur </h2>
+					<div style="background-color: rgba(0, 0, 0, 0.1);color:white">
+					<ul>
+						<li> Le navigateur et sa console </li>
+						<li> L'editeur de texte </li>
+						<li> La ligne de commande </li>
+						<li> Git </li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background="images/kidscoding.jpg"   >
+					<h2 style="background-color: rgba(0, 0, 0, 0.3);color:white"> Comment ca marche </h2>
+					<div style="background-color: rgba(0, 0, 0, 0.3);color:white">
+					<ul>
+						<li> Un peu de blabla </li>
+						<li> Une demo </li>
+						<li> Vous codez </li>
+						<li> Have fun !  </li>
+					</ul>
+					</div>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Le navigateur </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> Télécharger Google Chrome </li>
+        					<li> Ouvrire la console</li>
+        					<li> Changer un titre d'article </li>
+        				</ul>
+        			</p>
+        			<div class="note" >
+						Google Chrome: <a href="https://www.google.fr/chrome/browser/desktop/">www.google.fr/chrome/browser/desktop/</a><br>
+					</div>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> L'éditeur de texte  </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> Télécharger Sublime Text </li>
+        					<li> Créér un dossier de travail </li>
+        					<li> Créér son premier fichier HTML </li>
+        					<li> Afficher la page dans un navigateur </li>
+        				</ul>
+        			</p>
+        			<div class="note" >
+						Sublime Text : <a href="https://www.sublimetext.com<">www.sublimetext.com</a><br>
+					</div>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> La ligne de commande  </h2>
+        			<p class="text">  
+        				C'est une interface en mode texte uniquement. Il peut servir a lancer des programmes, a manipuler des fichiers, a mettre à jour le systéme ....
+        				Un programmeur web intéragit avec les serveurs depuis un terminal en ligne de commande. Il va en particulier deployer le site sur le serveur en utilisant des scripts et des outils depuis la ligne de commande.
+        			</p>
+        			<aside class="notes">
+								Demo connexion en SSH a serveur
+							</aside>
+				</section>
+				<section data-background="#034F84" >
+					<h2> Git </h2>
+        				<p class="text">  
+        				<ul>
+        					<li> Permet de travailler à plusieurs sur le même fichier</li>
+        					<li> Suivre l’évolution d’un code source  </li>
+        					<li> Créér différentes branches de développement </li>
+        				</ul>
+        			</p>	
+				</section>
+
+				<section data-background="#FFFFFF" >
+        	<img src="images/git_remotes.png">
+        			
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Git </h2>
+        				<p class="text">  
+        				<ul>
+									<li> git pull permet de récupérer la derniere version a date sur le dépot</li>
+									<li> git push permet d'envoyer des fichiers sur le dépot </li>
+									<li> git commit​ intègre une nouvelle version des fichiers avec un message </li>
+
+        				</ul>
+        			</p>	
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> GitHub  </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> S'inscrire sur Github </li>
+        					<li> Ajouter un nouveau repo </li>
+        					<li> Faire un commit </li>
+        					<li> Envoyer le fichier </li>
+        				</ul>
+        			</p>
+        			<div class="note" >
+						Github : <a href="https://github.com/">github.com/</a><br>
+						Appli Github : <a href="https://desktop.github.com/">desktop.github.com/</a><br>
+					</div>
+				</section>
+
+
+				<section data-background="#FFFFFF" >        	
+        	<img src="images/git_branch.svg">
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Git </h2>
+        				<p class="text">  
+        				<ul>
+									<li> git branch​ crée une nouvelle branche de développement ;</li>
+									<li> git merge​ fusionne plusieurs branches de développement.</li>
+        				</ul>
+        			</p>	
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> Front-end: 3 langages </h2>
+	    			<p class="text">  
+	    				<ul>
+	    					<li> HTML: Structure le contenu </li>
+	    					<li> CSS : Design le contenu </li>
+	    					<li> JAVASCRIPT : Anime le contenu </li>
+	    				</ul>
+	    			</p>
+				</section>
+				<section data-background="#4d7e65" >
+					<h2> HTML </h2>
+        			<p class="text">
+        				C'est un langage de balisage qui sert à dire à votre navigateur comment structurer les pages web que vous visitez.<br>
+        			</p>
+        			 <code class="hljs" > &lt;h1&gt; Welcome in the matrix &lt;/h1&gt; </code> 
+
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Eléments imbriqués
+						Les éléments doivent être ouverts et fermés correctement
+							
+						```
+						<h1> Welcome in the <strong> matrix </h1> </strong>
+						```
+						```
+						<h1> Welcome in the <strong> matrix </strong> </h1>
+						```
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La structure d'une page HTML
+							<html>
+
+							  <head>
+							  	Les informations intelligentes 
+							  </head>
+
+							  <body>
+							  	Le contenu de ma page web à afficher
+							  </body>
+
+							</html>	  					
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> La balise Head</h2>
+        			<p class="text">
+        				Toutes les informations nécessaires qui ne sont pas directement affichéee
+        				<ul>
+        				  <li> Le titre du navigateur </li>
+        					<li> L'auteur, la description </li>
+        					<li> Les liens vers les fichiers externes CSS / JS </li>
+        					<li> Les codes javascript   </li>
+        				</ul>
+        			</p>
+        		<aside class="notes">
+							Demo sur spin-interactive.com dans Google
+							Demo sur Facebook
+						</aside>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La syntaxe d'une balise
+							
+						```
+						<element attribut="value"> Plop Plop Plop Plop </element>
+						```
+						* Une syntaxe simple
+						* Une balise HTML encapsule le contenu 
+						* L'attribut est une option de la balise
+							
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La balise lien
+						```
+						<a href="http://www.spin-interactive.com" target="_blank">
+							Spin Interactive
+						</a>
+						```
+						* L'attribut "a" correspond à une balise de lien 
+						* Il a deux attributs "href" et "target"
+						* On a inséré un contenu affiché par le navigateur "Spin Interactive"
+						* Attention aux guillemets
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Titre
+
+						```
+						<h1>[...]</h1> 
+						<h2>[...]</h2>
+						<h3>[...]</h3>
+						<h4>[...]</h4>
+						<h5>[...]</h5>
+						<h6>[...]</h6>
+						```
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Paragraphe
+
+						```
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						  Veritatis laboriosam mollitia autem at ab omnis iure quis
+						  asperiores inventore eos nam aut iusto officiis deserunt
+						  nihil, sequi tempore impedit quae?
+						</p>
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Texte
+
+						```
+						EM est mise en <em> exergue </em>  (italic),
+						STRONG mise en exergue <strong> plus forte</strong>(gras)
+						```
+					</script>
+				</section>
+				
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La liste
+						Certaines balises ont des balises imbriquées
+
+						```
+							<ul>
+							  <li>Apprendre l'HTML </li>
+							  <li>Apprendre le CSS </li>
+							  <li>Publier une page web </li>
+							  <li>Faire un site internet </li>
+							</ul>
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Le commentaire
+						Permet d'insérer des notes dans le code que le navigateur n'affiche pas
+
+						```
+							<!-- Ceci est un commentaire. Il ne sera pas affiché. -->
+
+							Ce texte s'affichera dans le navigateur.
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La balise image
+
+						Certains attributs n'ont pas de balises fermantes
+
+						```
+						<img src="monsuperlogo.jpg" alt="Mon logo">
+						```
+
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Comment appeler une image 
+						Les images peuvent être appelées depuis une url 
+							
+						```
+						 <img src="https://media.giphy.com/media/AWv3UAFkgz39u/giphy.gif" >
+						```
+						Ou depuis un chemin en local
+							
+						```
+						 <img src="images/giphy.gif">
+						```
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> Les sections d'une page HTML </h2>
+        			<p class="text">
+        				<ul>
+        					<li> Le header : &lt;header&gt;  </h2></li>
+        					<li> La navigation bar : &lt;nav&gt;</li>
+        					<li> Le contenu principal : &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, et &lt;div&gt;. </li>
+        					<li> La sidebar :  &lt;aside&gt; </li>
+        					<li> Le footer :  &lt;footer&gt; </li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#4d7e65" >
+					<h2> Les sections d'une page HTML </h2>
+        	<img src="images/structure_HTML.gif">
+				</section>
+
+
+				<section data-background="#034F84" >
+					<h2> The daily challenge </h2>
+					<h4>Tentez de nouvelles expériences !</h4>
+
+        			<p class="text">
+
+        				<ul>
+        					<li> Un nouveau défi chaque jour </h2></li>
+        					<li> Partagez vos exploits</li>
+        					<li> Suivez vos amis  </li>
+        					<li> Lancez des défis  </li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> A votre tour</h2>
+        			<p class="text">
+        			Construisez votre premiere page présentant The Daily Challenge
+        				<ul>
+        					<li> Récupérer une premiere structure sur ce  <a href="https://romaintr.github.io/techbackpack/02_welcometothematrix/" target="_blank"> lien </a> </li>
+        					<li> Ajoutez les balises auteur et description dans la header </li>
+        					<li> Insérez les article qui présentent les fonctionnalités  </li>
+        					<li> Cherchez des images sur giphy  </li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Indentation du code</h2>
+        			<p class="text">
+        			Indentez son code est trés important !
+        				<ul>
+        					<li> Il doit etre lisible </li>
+        					<li> Il sera plus facile de le faire évoluer ou de le debugguer </li>
+        					<li> Prenez les bonnes habitudes dés le début </li>
+        				</ul>
+        			</p>
+				</section>
+				<section data-background="#034F84" >
+					<h2> CSS </h2>
+        			<p class="text">
+        				C'est un langage permettant d'appliquer différents styles à votre code HTML.<br>
+        				<ul>
+        					<li> Supprimez la CSS depuis la console</li>
+        					<li> Ouvrez votre fichier index.html et ajouter la balise &lt;style&gt; dans le &lt;head&gt; <head> </li>
+        					<li> Créez un fichier style.css à coté du fichier index.html et ajouter la régle
+        				</ul>
+        				<br><br>
+        				<code class="hljs" >p { color: red; }</code>
+        			</p>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La syntaxe d‘une règle CSS
+							
+						```
+						p{
+							color: red;
+							width: 500px;
+							border: 1px solid black;
+						}
+						```
+						* p est le selecteur
+						* color est la propriété
+						* red est la valeur
+						* attention au {} , : et ;
+							
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### La syntaxe d‘une règle CSS
+							
+						```
+						p,li,h1 {
+							color: red;
+						}
+						```
+						* Vous pouvez appliquer la même régle sur plusieurs éléments
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Les sélecteurs CSS
+						
+						Sélecteur d‘une balise	
+						```
+						h2 { color: black  }
+						```
+						Sélecteur d‘une classe
+						```
+						.feature-title { color: green }
+						```
+						Sélecteur d‘un ID;
+						```
+						#footer { color: white ; background-color: black }
+
+						```
+							
+					</script>
+				</section>
+	
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Couleurs
+						Mots clés	
+						```
+						h2 { color: green; }
+
+						```
+						Hexadecimal
+						```
+						h2 { color: #00FF00;  }
+						```
+						Red Green Blue
+						```
+						h2 { color: #rgb(0,255,0); }
+						```
+						Red Green Blue Alpha
+
+						```
+						h2 { color: #rgba(0,255,0,1.0); }
+
+						```	
+							
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Familles de police
+							
+						```
+						h2 {font-family: "Times New Roman", "Georgia", Serif; }
+
+						```
+						* 2 polices par ordre de préférence
+						* 1 police générique
+						* serif, sans-serif, monospace, cursive and fantasy
+            * Arial, Courier New, Georgia,Times New Roman,Trebuchet MS,Verdana
+							
+					</script>
+					<div class="note" >
+					 	<a href="https://www.w3.org/Style/Examples/007/fonts.fr.html#font-family">Familles de police</a><br>
+					</div>
+
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Font size
+							
+						```
+							font-size: 12px;
+							font-size: 0.8em;
+							font-size: 80%;
+						```
+						* Priviligiez le em qui est relatif par rapport au px est fixe
+						* le px sera généralement utiliser pour des éléments de bordures
+						* le % pour des conteneurs à tailles variables
+							
+					</script>
+
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						###  Mise en forme de texte
+						```
+						font-style : normal | italice | oblique
+					
+						/* graisse d’une police.*/
+						font-weight : normal | bold | 900
+
+						letter-spacing : 2px;
+
+						/* ligne décorative */
+						text-decoration : overline | line-through | underline
+
+						/* ombre portée */
+						text-shadow : text-shadow: 2px 2px #ff0000;
+
+						/* capitalisation du texte */
+						text-transform : uppercase | lowercase | capitalize
+						```
+						[Mozilla - Mettre en forme du texte ](https://developer.mozilla.org/fr/Apprendre/CSS/Comment/Mettre_en_forme_du_texte)
+						
+						[W3schools ](https://www.w3schools.com/cssref/pr_font_font-style.asp)
+
+					</script>
+				</section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  La disposition du texte
+            ```
+            line-height : number | px | %
+          
+            text-align  : center | left | right
+
+            text-overflow :  px | %
+
+            ```
+            [Mozilla - Mettre en forme du texte ](https://developer.mozilla.org/fr/Apprendre/CSS/Comment/Mettre_en_forme_du_texte)
+            
+            [W3schools ](https://www.w3schools.com/cssref/pr_font_font-style.asp)
+
+          </script>
+        </section>
+        <section data-background="#034F84" >
+          <h2> A votre tour</h2>
+              <p class="text">
+                <ul>
+                  <li> Définissez une typo, une couleur de fond et une taille par défaut </li>
+                  <li> Mettez en forme les titres, paragraphes et liens </li>
+                  <li> Insérez les articles qui présentent les fonctionnalités  </li>
+                  <li> <a href="https://fonts.google.com">Google Fonts</a>  </li>
+                  <li>  <a href="http://colorhunt.com">Color hunts </a> </li>
+                  <li>  <a href="http://www.colorzilla.com/">Color Zilla </a> </li>
+                </ul>
+              </p>
+        </section>
+         <section data-background="#034F84" >
+          <h2> DIV  </h2>
+          <p> Les div sont des boites qui groupent des elements et structurent la boite
+          <img src="images/BRO_ResponsiveDesign_Main2.png">
+              
+        </section>
+         <section data-background="#034F84" >
+          <h2> DIV </h2>
+          <img src="images/box-model-standard-small.png">
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  DIV: Positionnement
+            ```
+            .mydiv{
+              width : 100px  ; 
+              width : 80%  ;
+              
+              height: 100px  ; 
+              width : 80%  ; 
+
+              /* TOP  RIGHT  BOTTOM  LEFT */
+              margin : 25px 50px 75px 100px;
+
+              padding: 50px 30px 50px 80px;  
+
+              /* Centrer la div */
+              margin: 0 auto;        
+            }
+          ```
+          </script>
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  DIV: Design
+            ```
+
+            .mydiv{
+
+              border-width: 5px;
+              border-color: red;
+
+              border-radius: 10px;
+
+              /* TOP  RIGHT  BOTTOM COLOR ALPHA */
+              box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+              background-color:#333333;
+
+            }
+          ```
+          </script>
+        </section>
+         <section data-background="#034F84" >
+          <h2> A votre tour</h2>
+              <p class="text">
+                <ul>
+                  <li> Ajoutez une image en background  de la baseline qui prend toute la hauteur </li>
+                  <li> Google est ton ami ! </li>
+                </ul>
+              </p>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

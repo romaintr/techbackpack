@@ -13,7 +13,7 @@ Bienvenue sur le Techbackpack
 
 ## Cours 1 : Back To Basics !
 
-Presentation : https://romaintr.github.io/techbackpack/01_backtobasics/
+Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 * Comment marche internet ?
 	* Bref histoire de l'internet
@@ -36,7 +36,7 @@ Presentation : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 ## Cours 2 : Welcome to the Matrix
 
-* Philosophie des workshops
+Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/
 
 * Les outils du développeur
 	* La console Chrome
