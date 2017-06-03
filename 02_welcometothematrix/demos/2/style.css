@@ -35,9 +35,8 @@ a:hover {
   color: rgb(225, 0, 152);
 }
 
-/*
-header{
+.header{
   color: #EB503E;
   font-size: 35px;
   font-family: 'Pacifico', cursive;
-}*/
+}
