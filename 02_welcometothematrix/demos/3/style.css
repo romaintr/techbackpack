@@ -41,7 +41,7 @@ a:hover {
   font-family: 'Pacifico', cursive;
 }
 
-/*
+/* Mis en forme de la baseline */
 #baseline{
   background-color: #41A3C0;
   text-align: center;
@@ -49,35 +49,34 @@ a:hover {
   padding: 150px;
   color: white;
   text-shadow: 1px 1px 5px black;
-}*/
-/*
+}
+
 #baseline h1 {
   color: white;
   font-size: 50px;
 }
-*/
-/*
+
 #baseline a {
   color: white;
   font-size: 30px;
   font-weight: lighter;
 }
-*/
-/*
+
+/* Centrage de la section a propos */
 #apropos{
   width: 50%;
   margin: 0 auto;
 }
-*/
-/*
+
+/* Mise en forme de la div de feature */
+
 .feature{
   border-radius: 3px;
   border: 1px solid #F2F2F2;
   background: #FAFAFA;
-  position: relative;
   margin: 15px 0;
   text-align: center;
 }
-*/
+
 
 
