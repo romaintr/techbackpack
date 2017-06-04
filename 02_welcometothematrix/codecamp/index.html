@@ -68,7 +68,7 @@
 
 <pre><code> #apropos{
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
 }</code></pre> 
                 </li>
 
@@ -76,9 +76,10 @@
                   <p>Nous allons ensuite <strong>définir les espacements</strong>. Sur le selecteur <code> .feature</code> ajoutez lui un <code>margin</code> un <code>padding</code> et centrez le texte avec la propriété <code>text-align</code>
                   </p>
 
-<pre><code>margin: 15px 0;
+<pre><code>margin: 15px;
 padding: 15px 0;
 text-align: center;
+width: 400px;
 </code></pre> 
                 </li>
 
@@ -92,7 +93,12 @@ text-align: center;
               </ol>
               <h3 id="html-basics">Alignement et positionnement </h3>
               <ol>
-                <li><p>La balise nav du fichier <code>index.html</code> contient un menu sous forme de liste qui s'affiche par défaut en <code>display:block</code> les uns en dessous des autres. Pour aligner le menu, dans le fichier <code> style.css</code> ajoutez le selecteur <code>nav li</code> en lui appliquant  la propriété <code>  display:inline;</code>:
+                <li><p>La balise nav du fichier <code>index.html</code> contient un menu sous forme de liste qui s'affiche par défaut en <code>display:block</code> les uns en dessous des autres. Pour aligner le menu, dans le fichier <code> style.css</code> ajoutez le selecteur <code>nav li</code> en lui appliquant  la propriété <code>  display:inline;</code> et ajoutez un margin de 10px;
+<pre><code>nav li {
+  margin: 10px;
+  display:inline;
+}
+</code></pre> 
               </p>
                 </li>
                 <li>
@@ -133,7 +139,7 @@ text-align: center;
               </iframe>
             </div>
             <div class="col-xs-12 col-sm-12 meta-course">
-                <h5>Liens </h5>
+               
                 <ul>
                   <li> <a href="">Squellete html et CSS de la page</a></li>
                 </ul>
