@@ -37,6 +37,7 @@ Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 ## Cours 2 : Welcome to the Matrix
 
 Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/
+
 CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp/
 
 * Les outils du développeur
