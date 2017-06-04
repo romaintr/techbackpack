@@ -95,6 +95,8 @@
 .slides{
     width: 100%;
     height: 100%;
-        border-width: 0px;
-
+    border-width: 0px;
+}
+.camp-link{
+  margin-top: 10px;
 }
