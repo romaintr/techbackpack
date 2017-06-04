@@ -6,7 +6,6 @@
 
 .techbackpack {
   height: 100%;
-  font-family: "ProximaNova", "Helvetica", "sans-serif";
   font-size: 16px;
   line-height: 1.4;
   color: #333333;
@@ -14,20 +13,23 @@
 
 
 #logo{
-  color: #EB503E;
-  font-size: 35px;
-  font-family: 'Roboto';
+  color: #4d7e65;
+  font-size: 22px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
 }
 
 .nav-bar {
-      text-align: left;
-      position: absolute;
-      left: 0;
-      right: 0;
-      padding: 10px 0px;
-      min-height: 50px;
-      z-index: 14;
-      box-shadow: 0 0 1px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 15px 0px  15px 15px;
+  height:   60px;
+  z-index: 14;
+
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 .full-height {
@@ -50,7 +52,7 @@
 
 .page-content{
   height: 100%;
-  padding-top: 55px;
+  padding-top: 61px;
   padding-left: 0;
 }
 
@@ -59,38 +61,41 @@
   height: 100%;
   overflow: scroll;
   background: white;
+  border-right: 1px solid rgba(0,0,0,0.1);
+
 }
 
-.side-panel-header {
-    position: absolute;
-    z-index: 20;
-    background: rgba(255,255,255,0.98);
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
 
 .panel-content{
     color: #444444;
-    font-family: FreightSansPro;
+    font-family: "Asap";
     line-height: 1.4;
-    font-size: 17px;
-    padding-top: 80px;
+    font-size: 16px;
+    padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     max-width: 800px;
-    width: 90%;
-    margin-left: 5px;
-    margin-right: 5px;}
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
 
 .player{
     height: 100%;
     overflow: scroll;
-    padding-left: 0;
+    padding: 0;
+    background: white;
 }
 
-.full-size-player {
-    height: 100%;
+.player-content {
+    height: 80%;
+    padding: 0;
     position: relative;
+}
+
+.slides{
+    width: 100%;
+    height: 100%;
+        border-width: 0px;
+
 }

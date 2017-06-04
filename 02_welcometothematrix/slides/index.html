@@ -612,38 +612,54 @@
                   <li> Mettez en forme les titres, paragraphes et liens </li>
                   <li> Insérez les articles qui présentent les fonctionnalités  </li>
                   <li> <a href="https://fonts.google.com">Google Fonts</a>  </li>
-                  <li>  <a href="http://colorhunt.com">Color hunts </a> </li>
-                  <li>  <a href="http://www.colorzilla.com/">Color Zilla </a> </li>
+                  <li> <a href="http://colorhunt.com">Color hunts </a> </li>
+                  <li> <a href="http://www.colorzilla.com/">Color Zilla </a> </li>
                 </ul>
               </p>
         </section>
-         <section data-background="#034F84" >
-          <h2> DIV  </h2>
-          <p> Les div sont des boites qui groupent des élements et structurent le site
-          <img src="images/BRO_ResponsiveDesign_Main2.png">
-              
+        <section data-background="#034F84" >
+          <h2> Box Model </h2>
+          <p style="">
+            Tous les éléments HTML peuvent être considéres comme des boites<br><br>
+            Les &lt;div&gt; sont des boites qui groupent des élements et structurent le site<br><br>
+            Le Box Model permet de structurer la mise en page d'une page HTML<br>
+          </p>
         </section>
          <section data-background="#034F84" >
-          <h2> DIV </h2>
-          <img src="images/box-model-standard-small.png">
+          <h2> Box Model  </h2>
+          <img src="images/BRO_ResponsiveDesign_Main2.png">
+        </section>
+        <section data-background="#034F84" >
+          <h2> Structure d'une &lt;div&gt;</h2>
+          <p> Une boite html est composée des élément suivants:
+            <ul>
+                  <li> Content: Le texte/image/video à l'intérieur de la balise HTML</li>
+                  <li> Padding: L'espace entre le contenu et la bordure </li>
+                  <li> Border:  La bordure de la boite </li>
+                  <li> Margin:  L'espace exterieur entre la bordure de la boite et les autres éléments  </li>
+                </ul>
+            </p>
+        </section>
+         <section data-background="#034F84" >
+          <h2> Box Model </h2>
+          <img width="750" src="images/box-model-standard-small.png">
         </section>
         <section data-background="#4d7e65" data-markdown>
           <script type="text/template">
-            ###  DIV: Positionnement
+            ###  &lt;div&gt; Positionnement
             ```
             .mydiv{
-              width : 100px  ; 
-              width : 80%  ;
-              
-              height: 100px  ; 
-              width : 80%  ; 
+              /* Largeur et hauteur peuvent etre exprime en px ou % */
+              width : 100px ;   
+              height : 80%  ;
+            
+              /* L'espace peut etre fixé pour les 4 cotés */
+              margin : 25px;
 
-              /* TOP  RIGHT  BOTTOM  LEFT */
-              margin : 25px 50px 75px 100px;
+              /* Ou différent su chaque coté */
+              padding: 5px 8px 5px 8px; /* HAUT DROITE GAUCHE DROITE */
 
-              padding: 50px 30px 50px 80px;  
-
-              /* Centrer la div */
+              /* Centre l'emsemble des éléments contenus dans la boite */
               margin: 0 auto;        
             }
           ```
@@ -651,14 +667,13 @@
         </section>
         <section data-background="#4d7e65" data-markdown>
           <script type="text/template">
-            ###  DIV: Design
+            ###  &lt;div&gt; Design
             ```
 
             .mydiv{
 
               border-width: 5px;
               border-color: red;
-
               border-radius: 10px;
 
               /* TOP  RIGHT  BOTTOM COLOR ALPHA */
@@ -670,16 +685,59 @@
           ```
           </script>
         </section>
-         <section data-background="#034F84" >
-          <h2> A votre tour</h2>
-              <p class="text">
-                <ul>
-                  <li> Ajoutez une image en background  de la baseline qui prend toute la hauteur </li>
-                  <li> Google est ton ami ! </li>
-                </ul>
-              </p>
-        </section>
+        <section data-background="#034F84" >
+          <h2>  Alignement des boites  </h2>
+           <p>Définit le comportement des élements les uns par rapport aux autres.</p>
+          <p><ul>
+                  <li> <code style="background: grey;"> display: block</code> 
+                  Chaque élement prend une ligne. Ils se rangent les uns en dessous des autres  </li>
+                  <li> <code style="background: grey;">display: inline</code> Les éléments sont affichés sur une meme ligne et apparaissent les uns à coté des autres </li>
 
+                  <li> <code style="background: grey;">float: left / right </code> Indique si les éléments doit être placé le plus à gauche ou le plus à droite </li>
+
+                </ul>
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <img src="images/block-inline.svg" height="100%">
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  Display Flex
+            Flex est nouveauté CSS3 qui permet de gérer plus facilement les alignement que la technique du float left ou du inline-block
+            ```
+
+            .parent{
+              /*  Aligne à l'horizontale les div enfants */
+              display: flex;
+
+              /*  Les éléments sont disposés sur plusieurs 
+              lignes automatiquement  */
+              flex-wrap: wrap;
+
+              /*  Centre les div enfants */
+              justify-content: center;
+
+            }
+          ```
+          </script>
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  Propriété position
+            Elle permet de placer un element à une position exacte sur le page
+            La position est relative à la position ou l'élément devrait se trouver
+            On positionne l'élément à l'aide des propriétés `top` `left`, `bottom` et `right`
+            
+            ```
+            .container {
+              position: relative; 
+              top: 10px; 
+              left: 20px;
+            }
+          ```
+          </script>
+        </section>
 			</div>
 		</div>
 

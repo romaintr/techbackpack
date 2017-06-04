@@ -5,12 +5,24 @@ body{
   color: #000; 
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
+  margin:0;
 }
 
 nav{
+  display:inline;
   font-size: 1em;
   font-family: 'Source Sans Pro', sans-serif;
 } 
+
+nav ul {
+  float: left;
+  margin-top: 25px;
+}
+
+nav li {
+  margin: 10px;
+  display:inline;
+}
 
 h1{
   font-family: 'Roboto', sans-serif;
@@ -27,18 +39,22 @@ h2 {
 p{
   color: #8e9bac;
 }
+
 a { 
   color: #29324B;
 }
+
 a:hover {
   text-decoration: none;
   color: rgb(225, 0, 152);
 }
 
 #logo{
-  color: #EB503E;
+  color: #fff;
   font-size: 35px;
   font-family: 'Pacifico', cursive;
+  float: left;
+  margin-left: 50px;
 }
 
 /* Mis en forme de la baseline */
@@ -60,22 +76,32 @@ a:hover {
   color: white;
   font-size: 30px;
   font-weight: lighter;
+  text-decoration: none;
+}
+
+#baseline a:hover {
+  position: relative;
+  top:1px;
 }
 
 /* Centrage de la section a propos */
 #apropos{
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
   margin: 0 auto;
 }
 
 /* Mise en forme de la div de feature */
 
 .feature{
-  border-radius: 3px;
   border: 1px solid #F2F2F2;
   background: #FAFAFA;
-  margin: 15px 0;
+  margin: 15px;
+  padding: 15px 0;
   text-align: center;
+  width: 400px;
 }
 
 
