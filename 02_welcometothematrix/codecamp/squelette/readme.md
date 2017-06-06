@@ -134,12 +134,4 @@ a:hover {
   text-decoration: none;
 }
 
-.feature{
-  border: 1px solid #F2F2F2;
-  background: #FAFAFA;
-  margin: 15px;
-  padding: 15px 0;
-  text-align: center;
-}
-
 ```
