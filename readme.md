@@ -60,7 +60,10 @@ CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp
 	* Théorie
 	* Live-code
 	* Votre tour : My first landing page
-	
+
+## Cours 3 : Introduction à Javascript
+
+Slides : https://romaintr.github.io/techbackpack/03_introjavascript/cours/#/
 
 
 
