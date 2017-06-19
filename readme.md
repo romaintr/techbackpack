@@ -67,6 +67,8 @@ Slides : https://romaintr.github.io/techbackpack/03_introjavascript/cours/#/
 
 CodeCamp : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/
 
+Lien demo : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/1/index.html
+
 
 
 
