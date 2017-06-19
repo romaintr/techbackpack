@@ -81,8 +81,11 @@
 </code></pre>
                 </li>
                 <li>
-                  <p> Créez un nouveau fichier que l'on va nommer <code>script.js</code> . Dans ce fichier ajoutez la ligne ci-dessous qui fait un  appel à la fonction de javascript alert() permettant d'afficher une  boite de dialogue</p>
-<pre><code> alert( "Hello World" );
+                  <p> Créez un nouveau fichier que l'on va nommer <code>script.js</code> . Dans ce fichier ajoutez le code ci-dessous qui fait un  appel à la fonction de javascript alert() permettant d'afficher une  boite de dialogue. Par la suite il faudra bien ajouter toutes les fonctions et les appels à l'intérieur de la fonction <code>$( document ).ready(function() {</code> qui permet de s'assurer que la navigateur a bien fini de charger la page</p>
+<pre><code>
+$( document ).ready(function() {
+  alert('Hello')
+})
 </code></pre>
                   <p>Pour afficher cette boite de dialogue il faut  bien penser à lier le fichier javascript <code>script.js</code>  au fichier <code>defis.html</code> dans la section head de l'html </p>
 <pre><code><script src="script.js"></script></code></pre>
