@@ -65,5 +65,8 @@ CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp
 
 Slides : https://romaintr.github.io/techbackpack/03_introjavascript/cours/#/
 
+CodeCamp : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/
+
+
 
 
