@@ -33,10 +33,9 @@
       <div class="slides">
         <section data-markdown data-separator="^---$" data-vertical="^--$" data-notes="^Note:">
           	<script type="text/template">
-<img src="Spin_interactive_logohp.png" width="30%"/>
-
----
-# INITIATION AU JAVASCRIPT
+-
+# TECH BACKPACK
+## INITIATION AU JAVASCRIPT
 ---
 
 ## LANGAGE CLIENT
@@ -511,7 +510,7 @@ $(".maclass").hide();
 A tester dans la console !
 
 --
-##Exercice
+##Demo 1
 
 Coder une page HTML ou tous les paragraphes sont en rouge
 
@@ -548,7 +547,7 @@ L‘objet this permet d‘agit sur l‘élément cliqué <br><br>
 ```
 --
 
-##Exercice
+##Demo 2
 
 Au clique passer un paragraphe en rouge et le remettre en noir au second clique <br> <br>
 <i>Utiliser $(this).hasClass('maclass') qui renvoie true or false si l‘élément contient la class</i>
@@ -569,14 +568,15 @@ dans le but d’éviter des temps de chargement longs et des requêtes vers les 
 Différents formats TEXTE / HTML / XML / JSON
 --
 ##FORMATS
-```
- <challenges>
+
+``` 
+<challenges>
     <ch nom="Le grand splash" category="piscine"  />
     <ch nom="One color dinner" category="repas"  />
     <ch nom="Selfie tap tap" category="selfie"  />
     <ch nom="Do it like Spiderman" category="superhero"  />
  </challenges
-``
+```
 --
 ##FORMATS JSON
 Le JSON est une manière de structurer l‘information en utilisant la syntaxe objet de JavaScript – des objets et des tableaux<br>
@@ -597,6 +597,13 @@ console.log(challenges[1].nom);
 --
 ##AJAX & JQUERY
 
+
+```
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" 
+
+```
+
+
 ```
  $.ajax( "https://s3.eu-central-1.amazonaws.com/spintransfer/challenge.json" )
   .done(function(data) {
@@ -609,10 +616,11 @@ console.log(challenges[1].nom);
 --
 ## ASYNCHRONE
 
-Un script est synchrone quand un appel est réalisé, le script en attend la réponse ou la fin de l‘exécution.
-Quand un appel est asynchrone, le script principal n‘attend pas davoir reçu les données pour continuer.
+Un script est synchrone quand un appel est réalisé au serveyr, le script  attend la réponse.
 
-La requête AJAX est asynchrone. La requête est envoyée, mais le script n‘attend pas que la requête ait abouti, il continue quoi qu‘il arrive. L‘intérêt est que si la requête met quelques secondes à être traitée par le serveur, le script n‘est pas ralenti.
+Un script est asynchrone,  quand le script principal n‘attend pas davoir reçu les données pour continuer.
+
+La requête AJAX est asynchrone. 
 
 --
 ## CALLBACK
@@ -643,10 +651,9 @@ loadChallenges();
 
 --
 
-##Exercice
+##Demos 3
 
-Afficher la liste des challenges et ajouter un bouton "Selfie" et un bouton "Montagne" permettant de filter 
-les villages;
+Afficher la liste des challenges dynamiquement en appelant un fichier json depuis un serveur
 
 --
 #COOKIES
@@ -718,20 +725,15 @@ function checkCookie() {
 }
 ```
 
---
-##Exercice
-Personnaliser la page d‘accueil <br>
-Afficher un visuel en fonction des actions utilisateurs.
 
 --
-
 #Ressources
 
  <br>
 - https://developer.mozilla.org/fr/docs/Web/JavaScript<br>
 - http://learn.jquery.com
 
----
+
 
 	    	</script>
         </section>

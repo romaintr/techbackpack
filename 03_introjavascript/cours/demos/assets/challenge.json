@@ -1,0 +1,46 @@
+[
+  {
+    "id":1,
+    "nom":"Eat or Wear it",
+    "category":"nourriture",
+    "description" :"A toi de choisir tu peux le porter ou le manger ! ",
+    "youtube" : "https://www.youtube.com/embed/MDJxGO55wUg"
+  },
+   {
+    "id":2,
+    "nom":"Cinnamon  Challenge",
+    "category":"nourriture",
+    "description" :"Manger une cuillere de cannelle",
+    "youtube" :"https://www.youtube.com/embed/iuOu-ylTJ1o"    
+
+  },
+   {
+    "id":3,
+    "nom":"No hand selfie challenge",
+    "category":"selfie",
+    "description" :"Faire un selfie en tapant dans ses mains",
+    "youtube" :"https://www.youtube.com/embed/HJIGEVQ93iw"
+
+  },{
+    "id":4,
+    "nom":"Do it like Spiderman",
+    "category":"superhero",
+    "description" :"Se jeter sur un mur en imitant Spiderman",
+    "youtube" :"https://www.youtube.com/embed/cl7rfkpwZnU"
+  }
+  ,{
+    "id":5,
+    "nom":"Chubby Bunny Challenge",
+    "category":"nourriture",
+    "description" :"Mettre un maximum de marshmallows dans la bouche. Si vous pouvez dire Chubby Bunny ajoutez en un nouveau marshmallows!",
+    "youtube" :"https://www.youtube.com/embed/yZ6jXVvDQq8"
+  }
+  ,{
+    "id":4,
+    "nom":"Boyfriend Does Makeup Challenge",
+    "category":"makeup",
+    "description" :"Laissez votre petit ami vous maquiller !",
+    "youtube" :"https://www.youtube.com/embed/J66aZu8TTVY"
+  }
+]
+
