@@ -1,4 +1,5 @@
 
+$( document ).ready(function() {
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -80,6 +81,7 @@ function showChallenge(liste) {
 }
 //Charge le JSON des challenges
 loadChallenges();
+});
 
 
 
