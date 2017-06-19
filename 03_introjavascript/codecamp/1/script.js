@@ -24,8 +24,6 @@ function getUsername() {
     //recupere la valeur du cookie username
     var user = getCookie("username");
 
-    console.log(user )
-
     // si le cookie est différent de la chaine de caractére vide
     if (user != "") {
     // alors on affiche le cookie dans la console du navigateur 
@@ -35,14 +33,20 @@ function getUsername() {
     } else {
     // sinon je demande son nom et j'enregistre le cookie
         user = prompt("Veuillez rentrez votre nom:", "");
-        console.log(user)
         if (user != "" && user != null) {
             setCookie("username", user, 365);
         }
     }
 }
 
-getUsername();
+
+
+function welcome() {
+    var name= getUsername();
+   $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis !</h4>');
+};
+
+welcome();
 
 function loadChallenges() {
   $.ajax(

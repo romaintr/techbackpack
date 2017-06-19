@@ -99,7 +99,7 @@
                   <p> Dans le fichier  <code> script.js</code>  ajoutez une fonction <code> welcome() </code> qui affiche un message de bienvenue. Nous allons utiliser la fonction JQUERY <code> $().html()</code>  en remplaçant l'intérieur de la div qui a pour id <code> #welcome</code> par du contenu en html </p>
 <pre><code>function welcome() {
    $("#welcome").html('<h4>Bienvenue, <br> soyez pret à renouveler de nouveaux défis !</h4>');
-});
+};
 </code></pre>
                   <p>
                      Remplacez l'appel à la boite de dialogue par l'appel à la fonction <code> welcome()</code> et vérifiez que le message s'affiche bien dans votre navigateur.
@@ -198,7 +198,7 @@ getUsername();
                   <p> Empechez l'affichage de la boite de dialogue en ajoutant une condition <code> if </code> testant si le cookie existe.   
                   Remplacez  la fonction <code>getUsername</code>  par la fonction suivante et lisez attentivement les commentaires</p>
 <pre><code>
-  function getUsername() {
+function getUsername() {
     //recupere la valeur du cookie username
     var user = getCookie("username");
 
@@ -216,6 +216,9 @@ getUsername();
         }
     }
 }
+
+getUsername();
+
 </code></pre>
                 </li>
                 <li>
@@ -224,7 +227,7 @@ getUsername();
 <pre><code>function welcome() {
     var name= getUsername();
    $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis !</h4>');
-});
+};
 </code></pre>              
                 </li>
               </ol>
