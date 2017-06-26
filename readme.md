@@ -69,6 +69,11 @@ CodeCamp : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/
 
 Lien demo : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/1/index.html
 
+Fichier JSON: https://github.com/romaintr/techbackpack/blob/master/03_introjavascript/codecamp/1/challenge.json
+
+Pour mettre un fichier JSON en ligne: http://myjson.com/
+
+
 
 
 
