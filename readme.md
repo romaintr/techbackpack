@@ -34,9 +34,9 @@ Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 * Tips & Tricks pour travailler avec une équipe de développeurs
 
-[//]: <> ## Cours 2 : Welcome to the Matrix
+<!-- ## Cours 2 : Welcome to the Matrix
 
-[//]: <> Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/slides/
+Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/slides/
 
 CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp/
 
@@ -72,6 +72,7 @@ Lien demo : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/
 Fichier JSON: https://github.com/romaintr/techbackpack/blob/master/03_introjavascript/codecamp/1/challenge.json
 
 Pour mettre un fichier JSON en ligne: http://myjson.com/
+-->
 
 
 
