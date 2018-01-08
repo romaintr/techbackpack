@@ -36,7 +36,9 @@ Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 ## Cours 2 : Welcome to the Matrix
 
-Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/
+Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/slides/
+
+CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp/
 
 * Les outils du développeur
 	* La console Chrome
@@ -58,7 +60,20 @@ Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/
 	* Théorie
 	* Live-code
 	* Votre tour : My first landing page
-	
+
+## Cours 3 : Introduction à Javascript
+
+Slides : https://romaintr.github.io/techbackpack/03_introjavascript/cours/#/
+
+CodeCamp : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/
+
+Lien demo : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/1/index.html
+
+Fichier JSON: https://github.com/romaintr/techbackpack/blob/master/03_introjavascript/codecamp/1/challenge.json
+
+Pour mettre un fichier JSON en ligne: http://myjson.com/
+
+
 
 
 

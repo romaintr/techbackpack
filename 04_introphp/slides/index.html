@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>LE TECH BACKPACK : HTML & CSS</title>
+		<meta name="author" content="Romain Troche">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style>
+			.shell{
+				background-color:rgba(0, 0, 0, 0.8) !important; 
+				color: black !important; 
+				color: green !important; 
+				text-align   : left !important;
+			}
+
+			.text{
+				 text-align:left !important; 
+				 font-size: 90% !important;
+			}
+
+			.note{
+				margin-top: 60px !important; ; 
+				text-align: right !important; ; 
+				font-size: 50% !important; ;
+			}
+
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="#034F84">
+					<h1>Techbackpack </h1>
+
+					<h2> Introduction PHP</h2>
+					<p>
+						<small>Romain Troche  / <a mailto="romain@spin-interactive.com">romain@spin-interactive.com</a></small>
+					</p>
+				</section>
+				
+				<section data-background="#034F84"  >
+					<h1> Introduction PHP</h1>
+					<ul>
+						<li>Principe et introduction à PHP </li>
+						<li>Les bases du langage </li>
+					</ul>
+				</section>			
+
+				<section data-background="#034F84" >
+					<h2> PHP en bref </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> PHP est un langager serveur cross-platform </li>
+        					<li> Langage interprété qui s'éxecute sur un serveur </li>
+        					<li> Permet de générer des pages HTML dynamique </li>
+        					<li> La combinaison MYSQL et PHP permet d'extraire et de stocker des donnée dans une BDD</li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Historique</h2>
+        				<p> 1994 : créé par Rasmus Lerdorf pour ses besoins personnels </p>
+        				<img height="400" src="images/rasmus.png">
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Historique </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> 1995 : première version publique - gestion d'un compteur d'accés </li>
+        					<li> 1995 : gestion de formulaire - livre d'or 
+							<li> 1997 : plus de 50000 sites Web utilisent PHP </li>
+							<li> 1997 : PHP3 projet équipe, réécriture complète de l'interpréteur </li>
+        				</ul>
+        			</p>
+				</section>
+				<section data-background="#034F84" >
+					<h2> Historique </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> 1999 : 150 000 sites Web utilisent PHP3</li>
+        					<li> 2000 : PHP4 le projet est maintenant chapeauté par Zend</li>
+							<li> Aujourd'hui, plus de 5 000 000 de sites Web dans le monde entier</li>
+							<li> 1997 : projet équipe, réécriture complète de l'interpréteur </li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Intéret du PHP </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> Très populaire et très utilisé</li>
+        					<li> Très portable (fonctionne sous Windows/Unix...)</li>
+        					<li> Syntaxe héritée du C, du shell et du Perl </li>
+        					<li> Nombreux FAQ, tutoriaux, forum disponibles en ligne </li>
+        					<li> Conçu pour fonctionner efficacement avec le serveur Apache lui aussi en open source</li>
+        				</ul>
+        			</p>
+				</section>
+
+				<section data-background="#034F84" >
+					<h2> Commet ca marche </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> L'interpréteur de PHP est intégrée au serveur HTTP </li>
+        					<li> Le serveur lit les instructions intégrées à la page HTML, interpréte ces instructions et remplace le résultat </li>
+        					<li> Le client n'a pas accés au code au source et recoit uniquement le résultat</li>
+        				</ul>
+        			</p>
+				</section>
+				<section data-background="#034F84" >
+					<img src="images/Modele-php-html.jpg">
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Exemple
+
+						```
+						<html>
+							<head>
+								<title>Ma premiere page PHP </title>
+							</head>
+							<body>
+								<h1> Bienvenue </h1>
+								<?php echo " Hello World " ?>
+							</body>
+						</html>
+						```
+					</script>
+				</section>
+				<section data-background="#034F84" >
+					<h2> PHP en bref </h2>
+        			<p class="text">  
+        				<ul>
+        					<li> un bloc PHP est un groupe de lignes encadré par deux balises <code><?php ?> </code></li>
+        					<li> toute ligne située à l'extérieur de ces balises n'est pas interprétée : elle est recopiée à l'identique </li>
+        					<li> toute ligne située à l'intérieur de ces balises est interprétée par le moteur comme une instruction PHP</li>
+        				</ul>
+        					
+        			</p>
+				</section>
+				<section data-background="#034F84" >
+					<h2> Les bases du langage PHP </h2>
+        			<p class="text">  
+        			 Types, chaînes de caractères, tableaux, opérateurs, instructions conditionnelles, boucles, fonctions, variables, objets 
+        			</p>
+				</section>
+				<section data-background="#034F84" >
+					<h2> Ressources </h2>
+					<p class="text">  
+						<ul>
+		        			<li> <a href="http://php.net/"> PHP.net </a></li>
+		        			 <li> <a href="https://php.developpez.com/cours/"> Devellopez.com </a></li>
+		        		</ul>
+		        	</p>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Formulaire
+
+						```
+						<form action="monscript.php" method="get"> 
+								NOM
+						       <input type=text name="nom"><br>
+						       PRENOM
+						       <input type=text name="prenom"><br>
+						       MESSAGE
+						       <input type=text name="message"><br>
+						       <input type=submit value="Cliquez ici">
+						</form>
+						```
+					</script>
+				</section>
+
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Traitement formulaire : affichage
+
+						```
+						<html>
+							<body>
+						 		<h1> Magnigique résultat de formulaire </h1>
+						 		<br>
+									<? php
+									  print "<h1>".$_GET['prenom']";
+									  print $_GET['nom']." </h1>" ;
+									  print $_GET['message'];
+									?>
+						 	</body>
+							</html>
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Traitement formulaire : cookie
+
+						```
+						<?php 
+							$nom = $_GET['prenom'];
+							$prenom = $_GET['prenom'];
+							
+							// Nom du cookie / Valeur du cookie / Expiration du cookie
+							setcookie("nom_prenom", $nom." ".$prenom,time() + (86400 * 30));
+
+							?>
+						 	
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Traitement formulaire : Mail de contact
+
+						```
+					
+							<?php 
+								$nom = $_GET['prenom'];
+								$prenom = $_GET['prenom'];
+								$message = $_GET['message'];
+								$email= "noreplay@noreply.com";
+
+								$from="From: $nom<$email>\r\nReturn-path: $email";
+        						$subject="Message rçu depuis le formulaire de contact";
+								mail("youremail@yoursite.com", $subject, $message, $from);
+							?>
+						 	
+						```
+					</script>
+				</section>
+				<section data-background="#4d7e65" data-markdown>
+					<script type="text/template">
+						### Traitement formulaire : Insertion dans une bases de données
+
+						```
+					
+							<?php
+								$servername = "localhost";
+								$username = "username";
+								$password = "password";
+								$dbname = "myDB";
+
+								// Create connection
+								$conn = new mysqli($servername, $username, $password, $dbname);
+								// Check connection
+								if ($conn->connect_error) {
+								    die("Connection failed: " . $conn->connect_error);
+								} 
+
+								$nom = $_GET['prenom'];
+								$prenom = $_GET['prenom'];
+								$message = $_GET['message'];
+
+								$sql = "INSERT INTO MyMessage ($nom, $prenom, $message)
+								VALUES ('John', 'Doe', 'john@example.com')";
+
+								if ($conn->query($sql) === TRUE) {
+								    echo "New record created successfully";
+								} else {
+								    echo "Error: " . $sql . "<br>" . $conn->error;
+								}
+
+								$conn->close();
+								?>	 	
+						```
+					</script>
+				</section>
+     
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

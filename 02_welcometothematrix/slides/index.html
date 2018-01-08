@@ -277,7 +277,7 @@
 							Spin Interactive
 						</a>
 						```
-						* L'attribut "a" correspond à une balise de lien 
+						* L'element "a" correspond à une balise de lien 
 						* Il a deux attributs "href" et "target"
 						* On a inséré un contenu affiché par le navigateur "Spin Interactive"
 						* Attention aux guillemets
@@ -537,6 +537,7 @@
 						* 2 polices par ordre de préférence
 						* 1 police générique
 						* serif, sans-serif, monospace, cursive and fantasy
+            * Arial, Courier New, Georgia,Times New Roman,Trebuchet MS,Verdana
 							
 					</script>
 					<div class="note" >
@@ -585,57 +586,240 @@
 						[W3schools ](https://www.w3schools.com/cssref/pr_font_font-style.asp)
 
 					</script>
-
-
 				</section>
-				<section data-background="#4d7e65" data-markdown>
-					<script type="text/template">
-						### CSS 
-						
-				
-							
-					</script>
-					<div class="note" >
-					 	<a href="https://www.w3.org/Style/Examples/007/fonts.fr.html#font-family">Familles de police</a><br>
-					</div>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  La disposition du texte
+            ```
+            line-height : number | px | %
+          
+            text-align  : center | left | right
 
-				</section>
+            text-overflow :  px | %
 
+            ```
+            [Mozilla - Mettre en forme du texte ](https://developer.mozilla.org/fr/Apprendre/CSS/Comment/Mettre_en_forme_du_texte)
+            
+            [W3schools ](https://www.w3schools.com/cssref/pr_font_font-style.asp)
 
+          </script>
+        </section>
+        <section data-background="#034F84" >
+          <h2> A votre tour</h2>
+              <p class="text">
+                <ul>
+                  <li> Définissez une typo, une couleur de fond et une taille par défaut </li>
+                  <li> Mettez en forme les titres, paragraphes et liens </li>
+                  <li> Insérez les articles qui présentent les fonctionnalités  </li>
+                  <li> <a href="https://fonts.google.com">Google Fonts</a>  </li>
+                  <li> <a href="http://colorhunt.com">Color hunts </a> </li>
+                  <li> <a href="http://www.colorzilla.com/">Color Zilla </a> </li>
+                </ul>
+              </p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Box Model </h2>
+          <p style="">
+            Tous les éléments HTML peuvent être considéres comme des boites<br><br>
+            Les &lt;div&gt; sont des boites qui groupent des élements et structurent le site<br><br>
+            Le Box Model permet de structurer la mise en page d'une page HTML<br>
+          </p>
+        </section>
+         <section data-background="#034F84" >
+          <h2> Box Model  </h2>
+          <img src="images/BRO_ResponsiveDesign_Main2.png">
+        </section>
+        <section data-background="#034F84" >
+          <h2> Structure d'une &lt;div&gt;</h2>
+          <p> Une boite html est composée des élément suivants:
+            <ul>
+                  <li> Content: Le texte/image/video à l'intérieur de la balise HTML</li>
+                  <li> Padding: L'espace entre le contenu et la bordure </li>
+                  <li> Border:  La bordure de la boite </li>
+                  <li> Margin:  L'espace exterieur entre la bordure de la boite et les autres éléments  </li>
+                </ul>
+            </p>
+        </section>
+         <section data-background="#034F84" >
+          <h2> Box Model </h2>
+          <img width="750" src="images/box-model-standard-small.png">
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  &lt;div&gt; Positionnement
+            ```
+            .mydiv{
+              /* Largeur et hauteur peuvent etre exprime en px ou % */
+              width : 100px ;   
+              height : 80%  ;
+            
+              /* L'espace peut etre fixé pour les 4 cotés */
+              margin : 25px;
 
-			 	<section data-background="images/halt-and-catch-fire-season-3-joe.jpg"  >
-					<h2 style="background-color: rgba(0, 0, 0, 0.1);color:white" > L'editeur de texte </h2>
-					<p style="background-color: rgba(0, 0, 0, 0.5); color:white"> 
-						text text text text text text text text text text text text text text text text text text text text text text 
-        				text text text text text text text text text text text text text text text text text text text text text text 
-        				text text text text text text text text text text text text text text text text text text text text text text 					
-					</p>
-				</section>
-				
-				<section data-background="#4d7e65" >
-					<h2> L'editeur de texte  </h2>
-        			<p class="text">  
-        				text text text text text text text text text text text text text text text text text text text text text text 
-        				text text text text text text text text text text text text text text text text text text text text text text 
-        				text text text text text text text text text text text text text text text text text text text text text text 
-        			</p>
-        			<div class="note" >
-						Lien numéro 1 : <a href="#">Nom du site</a><br>
-						Lien numero 2 : <a href="#">Nom du site</a>
-					</div>
-				</section>
-				<section data-background="#034F84" >
-					<h2>Titre</h2>
-					<ul>
-						<li>text text text text text text text text text text text </li>
-						<li>text text text text text text text text text text text </li>
-						<li>text text text text text text text text text text text </li>
-						<li>text text text text text text text text text text text </li>
-					</ul>
-				</section>
-				<section data-background="https://media0.giphy.com/media/n7C5DOuH1m0iA/giphy.gif">
-						<h2>GIFs!</h2>
-				</section>
+              /* Ou différent su chaque coté */
+              padding: 5px 8px 5px 8px; /* HAUT DROITE BAS GAUCHE */
+
+              /* Centre l'emsemble des éléments contenus dans la boite */
+              margin: 0 auto;        
+            }
+          ```
+          </script>
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  &lt;div&gt; Design
+            ```
+
+            .mydiv{
+
+              border-width: 5px;
+              border-color: red;
+              border-radius: 10px;
+
+              /* TOP  RIGHT  BOTTOM COLOR ALPHA */
+              box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+
+              background-color:#333333;
+
+            }
+          ```
+          </script>
+        </section>
+        <section data-background="#034F84" >
+          <h2>  Alignement des boites  </h2>
+           <p>Définit le comportement des élements les uns par rapport aux autres.</p>
+          <p><ul>
+                  <li> <code style="background: grey;"> display: block</code> 
+                  Chaque élement prend une ligne. Ils se rangent les uns en dessous des autres  </li>
+                  <li> <code style="background: grey;">display: inline</code> Les éléments sont affichés sur une meme ligne et apparaissent les uns à coté des autres </li>
+
+                  <li> <code style="background: grey;">float: left / right </code> Indique si les éléments doit être placé le plus à gauche ou le plus à droite </li>
+
+                </ul>
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <img src="images/block-inline.svg" height="100%">
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  Display Flex
+            Flex est nouveauté CSS3 qui permet de gérer plus facilement les alignement que la technique du float left ou du inline-block
+            ```
+
+            .parent{
+              /*  Aligne à l'horizontale les div enfants */
+              display: flex;
+
+              /*  Les éléments sont disposés sur plusieurs 
+              lignes automatiquement  */
+              flex-wrap: wrap;
+
+              /*  Centre les div enfants */
+              justify-content: center;
+
+            }
+          ```
+          </script>
+        </section>
+        <section data-background="#4d7e65" data-markdown>
+          <script type="text/template">
+            ###  Propriété position
+            Elle permet de placer un element à une position exacte sur le page
+            La position est relative à la position ou l'élément devrait se trouver
+            On positionne l'élément à l'aide des propriétés `top` `left`, `bottom` et `right`
+            
+            ```
+            .container {
+              position: relative; 
+              top: 10px; 
+              left: 20px;
+            }
+          ```
+          </script>
+        </section>
+
+        <section data-background="images/bootstrap.jpg" data-background-size="400px" data-background-repeat="repeat"  >
+          <h2 style="background-color: rgba(0, 0, 0, 0.8);color:white"> BOOTSTRAP </h2>
+          <div style="background-color: rgba(0, 0, 0, 0.7);color:white">
+          <ul>
+            <li> Un framework</li>
+            <li> Installation</li>
+            <li> Media Queries </li>
+            <li> Ressources </li>
+          </ul>
+          </div>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Un framework </h2>
+           <p>C'est le framework CSS le plus polulaire qui aide à mettre en forme des pages.
+           Il permet ainsi de concevoir un site web rapidement qui s'affiche sur toute taille d'écran et avec peu de lignes de code ajoutées</p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Un framework </h2>
+          <p><ul>
+                  <li> Créer les bases et organise le code</li>
+                  <li> Embarque des composants HTML/JAVASCRIPT </li>
+                  <li> Organise l'aspect visuel avec un systéme de grille</li>
+                  <li> Apporte un style de base aux boutons et formulaires </li>
+                  <li> Optimise l'affichage des éléments en fonction des tailles d'écrans </li>
+                </ul>
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Son histoire </h2>
+          <p><ul>
+                  <li> Le projet Bootstrap a été créé au départ par Twitter pour répondre à des besoins internes </li>
+                  <li> Publié en 2011 il est devenu trés vite populaire </li>
+                  <li> Il a été mis à disposition du public sous licence Apache.  </li>
+                  <li> Le framework en est actuellement à la version 3 dites "mobile first" </li>
+                  <li> Il devient critiqué car le design de nos pages web se sont normalisées </li>
+
+                </ul>
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Son contenu </h2>
+          <p><ul>
+                  <li> Une mise en page basée sur une grille de 12 colonnes</li>
+                  <li> L'utilisation de Normalize.css pour avoir un rendu identique quel que soit le navigateur utilisé</li>
+                  <li> Du code HTML5/CSS3 basé sur le principe du responsive design </li>
+                  <li> Des modules javascript de qualité :Carousel, Alert, Modal ...</li>
+                  <li> Une documentation</li>
+
+                </ul>
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Installation </h2>
+          <p><ul>
+                  <li> Rendez-vous sur le site de Bootstrap </li>
+                  <li> Télécharger la librairie </li>
+                  <li> Explorez les différents fichiers</li>
+                  <li> Explorez la documentation</li>
+                  <li> Testez les différentes structures proposées</li>
+                </ul>
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Les fichiers </h2>
+          <p><ul>
+                  <li>bootstrap.css comporte les classes de base</li>  
+                  <li>bootstrap-theme.css contient des règles de styles pour créer un thème </li>
+                  <li>glyphicons-halflings-regular.svg comporte la collection d'icônes au format svg</li>
+                  <li>bootstrap.js contient le code JS des composants</li>
+                </ul>
+                <br><br>
+              
+            </p>
+        </section>
+        <section data-background="#034F84" >
+          <h2> Installation </h2>
+          <p>
+                Les fichiers min contiennent le même code que leurs équivalents mais ont été épurés des commentaires et compressés pour les alléger et accélérer ainsi leur chargement.
+            </p>
+        </section>
+
 			</div>
 		</div>
 

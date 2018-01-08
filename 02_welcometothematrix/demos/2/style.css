@@ -1,26 +1,42 @@
 /* style.css */
+
 body{
-  background: rgb(245,245,245);
-  color: green;
-  font-size: 25px;
-  font-family: Helvetica;
+  background: #fff;
+  color: #000; 
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
+nav{
+  font-size: 1em;
+  font-family: 'Source Sans Pro', sans-serif;
+} 
+
 h1{
-  font-family: Courier;
-  color: red;
-  font-weight: lighter;
-  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  color:  #41A3C0; 
+  font-weight: bolder;
+  font-size: 2em;
 }
 h2 {
-  font-family: Courier;
-  color: pink;
+  font-family: 'Roboto', sans-serif;
+  color: #3b4563;
   font-weight: lighter;
-  font-size: 8px;
+  font-size: 1.5em;
 }
-a {
-  color: yellow;
+p{
+  color: #8e9bac;
+}
+a { 
+  color: #29324B;
 }
 a:hover {
   text-decoration: none;
-  color: purple;
+  color: rgb(225, 0, 152);
+}
+
+.header{
+  color: #EB503E;
+  font-size: 35px;
+  font-family: 'Pacifico', cursive;
 }

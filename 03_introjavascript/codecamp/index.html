@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="techbackpack_html">
+  <head>
+    <meta charset="utf-8">
+    <title>tech://backpack</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Asap:400,500" rel="stylesheet">
+    <script src="jquery-3.2.1.min.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="highlight/styles/default.css" rel="stylesheet" type="text/css">
+    <script src="highlight/highlight.pack.js"></script>
+  
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+          $(block).html(function(i, h) {
+            console.log(h)
+            return h.replace(/[<>\"\'\t\n]/g, function(m) { return {
+              '<' : '&lt;',
+              '>' : '&gt;',
+              "'" : '&#39;',
+              '"' : '&quot;',
+              '\t': '  ',
+              '\n': '<br/>' // needed for IE
+            }[m]});
+          })
+          hljs.highlightBlock(block);
+        });
+      });
+
+    </script>
+  </head>
+  <body class="techbackpack">
+    <div class="nav-show-container ">
+      <div class="nav-bar">
+        <div class="container nav-bar-container">
+              <span id="logo"> tech://backpack </span>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="page-content">
+          <div class="col-sm-6 col-md-6 side-panel ">
+            <div class="panel-content">
+                   
+              <h2 id="main-takeaways">Introduction a JS </h2>
+              <h3>Architecture</h3>
+              Dans un premier temps il faut créer son architecture de fichier pour démarrer dans de bonnes conditions. <br> <br>
+              <ol>
+              <li>
+              <p> Au même niveau que votre fichier <code> index.html</code>, créez un nouveau fichier<code>defis.html</code> dans lequel vous allez insérer la structure HTML de base de notre nouvelle page. </p>
+              <p> Ajoutez la balise <code>html</code> avec à l'intérieur  la balise <code>head</code> et la balise <code>body</code>. N'oubliez pas les balises fermantes !!!</p>
+              <p>Ajoutez ensuite dans le <code>head </code> les balises suivantes : </p>
+<pre><code><head>
+<meta charset="utf-8">
+<title>The Daily challenge</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro|Pacifico" rel="stylesheet">
+</head>
+</code></pre>
+              <p>Puis dans le <code>body </code> les balises suivantes </p>
+<pre><code><header>
+<nav>
+  <span id="logo">The Daily Challenge </span>
+  <ul>
+    <li><a href="index.html">A propos </a></li>
+    <li><a href="#"> Voir les défis</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+  <section id="welcome">
+
+  </section>  
+</main></code></pre>
+              </li> 
+              <li>
+                  <p> Pas besoin de créer une nouvelle feuille de style, vous pouvez lier cette page html vers le meme fichier <code>style.css</code>  que la page d'accueil. Cela va nous permettre de réutiliser nos régles CSS précedemment écrites. Il vous suffit d'ajouter dans la section head du fichier <code>defis.html</code>  le lien vers la feuille de style. 
+<pre><code><link href="style.css" rel="stylesheet" type="text/css">
+</code></pre>
+                </li>
+                <li>
+                  <p> Créez un nouveau fichier que l'on va nommer <code>script.js</code> . Dans ce fichier ajoutez le code ci-dessous qui fait un  appel à la fonction de javascript alert() permettant d'afficher une  boite de dialogue. Par la suite il faudra bien ajouter toutes les fonctions et les appels à l'intérieur de la fonction <code>$( document ).ready(function() {</code> qui permet de s'assurer que la navigateur a bien fini de charger la page</p>
+<pre><code>
+$( document ).ready(function() {
+  alert('Hello')
+})
+</code></pre>
+                  <p>Pour afficher cette boite de dialogue il faut  bien penser à lier le fichier javascript <code>script.js</code>  au fichier <code>defis.html</code> dans la section head de l'html </p>
+<pre><code><script src="script.js"></script></code></pre>
+                </li>
+                <li>
+                  <p> Afin d'utiliser la librairie JQUERY ajoutez le lien dans le head du fichier <code> defis.html</code> au dessus du lien vers le fichier script.js</p>
+<pre><code><script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</code></pre>
+                </li>
+                 <li>
+                  <p> Dans le fichier  <code> script.js</code>  ajoutez une fonction <code> welcome() </code> qui affiche un message de bienvenue. Nous allons utiliser la fonction JQUERY <code> $().html()</code>  en remplaçant l'intérieur de la div qui a pour id <code> #welcome</code> par du contenu en html </p>
+<pre><code>function welcome() {
+   $("#welcome").html('<h4>Bienvenue, <br> soyez pret à renouveler de nouveaux défis !</h4>');
+};
+</code></pre>
+                  <p>
+                     Remplacez l'appel à la boite de dialogue par l'appel à la fonction <code> welcome()</code> et vérifiez que le message s'affiche bien dans votre navigateur.
+                  </p>
+<pre><code>welcome();</code></pre>
+                </li>
+              </ol>
+               <p> Le message de bienvenue s'affiche bien dans votre page HTML ? Bravo ! Vous etes prêts pour la suite. Mais avant tout ajoutez un commit dans le logiciel github et faites un push !!</p>
+              <h3>Design</h3>
+                Maintenant que nos fichiers sont prets nous pouvons passer à la partie design.
+              <ol>
+                <li>
+                  <p> On va démarrer par reprendre le design du  message d'accueil en centrant le message  et en lui attribuant une couleur de fond . Ajoutez les régles de CSS suivantes dans le fichier style.css</p>
+<pre><code>#welcome{
+  background-color: #41A3C0;
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#welcome h4{
+ font-size: 50px;
+}
+</code></pre>
+                </li>
+                <li>
+                  <p> Ensuite  nous allons ajouter une section <code>defis </code> en lui ajoutant des boites contenant des exemples de défis juste sous la section welcome</p>
+
+<pre><code><section id="defis">
+<div class='defi'>"
+  <h2>Le grand splash</h2>
+  <p>Sauter du haut d'un plongeoir olympique</p>
+  <iframe width="364" height="204" src="'+challenge.youtube+'" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class='defi'>"
+  <h2>Le grand splash</h2>
+  <p>Sauter du haut d'un plongeoir olympique</p>
+  <iframe width="364" height="204" src="'+challenge.youtube+'" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class='defi'>"
+  <h2>Le grand splash</h2>
+  <p>Sauter du haut d'un plongeoir olympique</p>
+  <iframe width="364" height="204" src="'+challenge.youtube+'" frameborder="0" allowfullscreen></iframe>
+</div>
+</section>
+</code></pre>
+                <p> On va ensuite pouvoir réutiliser le style des boites feature dans notre fichier <code>style.css</code> 
+                    Pour cela vous pouvez ajoutez une nouvelle cible <code>.defi</code>  à la cible <code>.feature</code> déja présente dans la feuille de style en remplacant la ligne 
+                    <code> .feature { </code> par la ligne <code> .feature,.defi{ </code>. Ce qui nous donne la régle suivante: 
+<pre><code><.feature,.defi{
+  border: 1px solid #F2F2F2;
+  background: #FAFAFA;
+  margin: 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 400px;
+}</code></pre>
+                </p>
+                </li>
+              </ol>
+              <p> On en a fini pour le design de la page. Voyez-vous bien le texte de bienvenue centré et une grille de défis comme notre grille de feature précédente ? 
+              Alors vous êtes bons ! Commitez , Pushez et passez à l'étape suivante !
+              <h3>Personnalisation </h3>
+              <ol>
+                <li>
+                  <p> Ajoutez les fonctions de javscripts permettant de manipuler les cookies dans le fichier <code>script.js</code> </p>
+<pre><code>
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+</code></pre>                
+                  <p> Affichez la boite de dialogue permettant de demander son nom à l'utilisateur en créant une fonction <code>getUsername</code> et enregistrez le nom dans un cookie que l'on va nommez <code>username</code> </p>
+<pre><code>
+  
+function getUsername () {
+   var user=prompt("Veuillez rentrez votre nom:", "");
+   setCookie("username", user, 365);
+}
+getUsername();
+
+</code></pre>
+                  <p> Empechez l'affichage de la boite de dialogue en ajoutant une condition <code> if </code> testant si le cookie existe.   
+                  Remplacez  la fonction <code>getUsername</code>  par la fonction suivante et lisez attentivement les commentaires</p>
+<pre><code>
+function getUsername() {
+    //recupere la valeur du cookie username
+    var user = getCookie("username");
+
+    // si le cookie est différent de la chaine de caractére vide
+    if (user != "") {
+    // alors on affiche le cookie dans la console du navigateur 
+        console.log(user);
+        // et je retourne la valeur enregistrée dans le cookie pour etre utilisé par une autre fonction
+        return user;
+    } else {
+    // sinon je demande son nom et j'enregistre le cookie
+        user = prompt("Veuillez rentrez votre nom:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+getUsername();
+
+</code></pre>
+                </li>
+                <li>
+                  <p> Afin de personaliser notre page, au lieu d'afficher le nom récupéré depuis le cookie dans la console on va injecter ce nom dynamiquement en utilisant la fonction getUsername dans la fonction welcome que l'on va réécrire de la maniére suivante</p>
+
+<pre><code>function welcome() {
+    var name= getUsername();
+    $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis !</h4>');
+};
+</code></pre>              
+                </li>
+              </ol>
+              C'est bon votre nom s'affiche ??? Bravo ! Vous venez de créer votre premier cookie ! Maintenant il est temps de commit et de pusher
+              <h3> Appel serveur   </h3>
+              <ol>
+                <li>
+                  <p> On va maintenant afficher les défis de maniére dynamique dans la page en appelelant un fichier json sur un serveur listant les différents défis proposés.
+                    <br>
+                  Ajoutez la fonction suivante  dans le fichie <code>script.js</code> qui permet d'appeler le serveur en AJAX</p>
+<pre><code>function loadChallenges() {
+  $.ajax(
+        {url : 'https://s3.eu-central-1.amazonaws.com/spintransfer/challenge.json',
+        type: 'GET',
+        dataType: 'json'} 
+  )
+  .done(function(data) {
+    showChallenge(data);
+  })
+  .fail(function() {
+    alert( "error" );
+  });
+}
+</code></pre>  
+                </li>
+                <li>   
+                  <p> Repérez dans la fonction les instructions  quand le serveur a renvoyez le fichier JSON. Vous avez trouvez ? Cette fonction appel une fonction <code> showChallenge(data);</code>. Ajoutez cette fonction dans le fichier <code>script.js</code></p>
+<pre><code>function showChallenge(liste) {
+
+  var data="";
+
+  for ( var i=0; i < liste.length; i++) {
+    data+='<div class="defi">';
+
+    var challenge=liste[i];
+
+    data+='<h2>'+challenge.nom+'</h2>';
+    data+='<p>'+challenge.description+'</p>';
+    data+='<iframe width="364" height="204" src="'+challenge.youtube+'" frameborder="0" allowfullscreen></iframe>'
+    data+="</div>";
+  }
+  $("#defis").html(data);
+
+}
+</code></pre>
+            </li>
+            <li>
+              Lisez attentivement cette fonction comme un machine ! Que fait-elle ? <br>Elle prend en entrée une liste de challenge. 
+              Sur cette liste une boucle permet de construire notre html corredpondant a la div <code>.defi</code> 
+              <br>Une fois la boucle terminée on remplace tout simplement l'HTML généré dynamiquement par l'HTML statique présent dans la page en utilisant la fonction <code>HTML </code> de jquery.
+
+              Pour afficher votre la liste de défi il ne vous reste plus qu'a appeler la foonction <code>loadCHallenges</code> en ajoutant la ligne suivante dans le <code>script.js </code>
+<pre><code>loadChallenges();
+</code></pre>
+            </li> 
+          </ol>
+          <p>
+            La liste de défi s'affiche ??? WELL DONE !!!!! Vous avez réussi !!!!! Ca vaut bien un petit commit et un petit push. 
+
+            Ensuite vous pouvez reprendre la page index.html en ajoutant un lien vers la page des défis . Ca y est votre démo d'application est prete ! Vous pouvez testez le concept sur vos amis.
+          </p>
+
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 player"> 
+            <div class="col-xs-12 col-sm-12 player-content">
+              <iframe src="../cours/index.html" class="slides">
+              <p>Your browser does not support iframes.</p>
+              </iframe>
+            </div>
+            <div class="col-xs-12 col-sm-12">
+                <ul class="camp-link">
+                  <li> <a href="http://jquery.com/">La librairie JQUERY </a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
