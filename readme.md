@@ -34,7 +34,7 @@ Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 * Tips & Tricks pour travailler avec une équipe de développeurs
 
-<!-- ## Cours 2 : Welcome to the Matrix
+ ## Cours 2 : Welcome to the Matrix
 
 Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/slides/
 
@@ -55,7 +55,8 @@ CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp
 	* Théorie
 	* Live-code
 	* Votre tour : Page d'introduction
-
+	
+<!--
 * Introduction à Bootstrap
 	* Théorie
 	* Live-code
