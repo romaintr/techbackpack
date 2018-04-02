@@ -61,7 +61,7 @@ CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp
 	* Théorie
 	* Live-code
 	* Votre tour : My first landing page
-
+-->
 ## Cours 3 : Introduction à Javascript
 
 Slides : https://romaintr.github.io/techbackpack/03_introjavascript/cours/#/
@@ -73,7 +73,7 @@ Lien demo : https://romaintr.github.io/techbackpack/03_introjavascript/codecamp/
 Fichier JSON: https://github.com/romaintr/techbackpack/blob/master/03_introjavascript/codecamp/1/challenge.json
 
 Pour mettre un fichier JSON en ligne: http://myjson.com/
--->
+
 
 
 
