@@ -51,7 +51,7 @@
        </section>
     </main>
     <footer>
-      <p>Cette application est proposée le codecamp CMI Dauphine 2017 </p>
+      <p>Cette application est proposée le codecamp CMI Dauphine </p>
     </footer>
   </body>
 </html>
