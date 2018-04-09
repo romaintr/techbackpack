@@ -179,7 +179,8 @@ function getUsername() {
 }
 </code></pre>
                   <p> Ajoutez une seconde fonction <code>welcome </code>qui va s'occuper d'appeler la fonction  <code>getUsername</code> et injecter de l'html dans notre page pour afficher le nom de l'utilisateur </p>
-function welcome() {
+<pre><code>
+ function welcome() {
     var name= getUsername();
     $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis ! </h4>');
 
