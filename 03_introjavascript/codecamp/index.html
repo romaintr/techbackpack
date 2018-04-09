@@ -168,73 +168,29 @@ $( document ).ready(function() {
               <h3>Personnalisation </h3>
               <ol>
                 <li>
-                  <p> Ajoutez les fonctions de javscripts permettant de manipuler les cookies dans le fichier <code>script.js</code> </p>
-<pre><code>
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1);
-        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-    }
-    return "";
-}
-</code></pre>                
-                  <p> Affichez la boite de dialogue permettant de demander son nom à l'utilisateur en créant une fonction <code>getUsername</code> et enregistrez le nom dans un cookie que l'on va nommez <code>username</code> </p>
+                  <p> Ajoutez dans le fichier <code>script.js</code> une fonction qui se nomme <code>getUsername</code> permettant d'afficher une boite de dialogue qui demande son nom à l'utilisateur </p>
 <pre><code>
   
-function getUsername () {
-   var user=prompt("Veuillez rentrez votre nom:", "");
-   setCookie("username", user, 365);
-}
-getUsername();
-
-</code></pre>
-                  <p> Empechez l'affichage de la boite de dialogue en ajoutant une condition <code> if </code> testant si le cookie existe.   
-                  Remplacez  la fonction <code>getUsername</code>  par la fonction suivante et lisez attentivement les commentaires</p>
-<pre><code>
 function getUsername() {
-    //recupere la valeur du cookie username
-    var user = getCookie("username");
-
-    // si le cookie est différent de la chaine de caractére vide
-    if (user != "") {
-    // alors on affiche le cookie dans la console du navigateur 
-        console.log(user);
-        // et je retourne la valeur enregistrée dans le cookie pour etre utilisé par une autre fonction
-        return user;
-    } else {
-    // sinon je demande son nom et j'enregistre le cookie
-        user = prompt("Veuillez rentrez votre nom:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
-        }
-    }
+    //affiche une boite de dialogue 
+    var  user = prompt("Veuillez rentrez votre nom:", "");
+    // la fonction se termine en retournant le nom récupéré par la boite de dialogue
+    return user
 }
+</code></pre>
+                  <p> Ajoutez une seconde fonction <code>welcome </code>qui va s'occuper d'appeler la fonction  <code>getUsername</code> et injecter de l'html dans notre page pour afficher le nom de l'utilisateur </p>
+function welcome() {
+    var name= getUsername();
+    $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis ! </h4>');
 
-getUsername();
+};
+// Appel la fonction
+welcome();
 
 </code></pre>
-                </li>
-                <li>
-                  <p> Afin de personaliser notre page, au lieu d'afficher le nom récupéré depuis le cookie dans la console on va injecter ce nom dynamiquement en utilisant la fonction getUsername dans la fonction welcome que l'on va réécrire de la maniére suivante</p>
-
-<pre><code>function welcome() {
-    var name= getUsername();
-    $("#welcome").html('<h4>Bienvenue '+name+', <br> soyez pret à renouveler de nouveaux défis !</h4>');
-};
-</code></pre>              
                 </li>
               </ol>
-              C'est bon votre nom s'affiche ??? Bravo ! Vous venez de créer votre premier cookie ! Maintenant il est temps de commit et de pusher
+              C'est bon votre nom s'affiche ??? Bravo ! Vous venez de créer votre premier script ! Maintenant il est temps de commit et de pusher
               <h3> Appel serveur   </h3>
               <ol>
                 <li>
