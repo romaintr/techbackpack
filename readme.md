@@ -38,7 +38,7 @@ Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/slides/
 
-CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp/
+CodeCamp: http://spin-ext.alwaysdata.net/cours/codecamp/
 
 * Les outils du développeur
 	* La console Chrome
@@ -49,12 +49,12 @@ CodeCamp: https://romaintr.github.io/techbackpack/02_welcometothematrix/codecamp
 * La structure HTML
 	* Théorie
 	* Live-code
-	* Votre tour : Le Pitch Deck
+	* Votre tour 
 
 * Le fichier CSS
 	* Théorie
 	* Live-code
-	* Votre tour : Page d'introduction
+	* Votre tour 
 	
 <!--
 * Introduction à Bootstrap
