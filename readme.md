@@ -38,6 +38,8 @@ Slides : https://romaintr.github.io/techbackpack/01_backtobasics/
 
 Slides : https://romaintr.github.io/techbackpack/02_welcometothematrix/slides/
 
+Exercice : https://romaintr.github.io/techbackpack/02_welcometothematrix/exos/exercice.html
+
 CodeCamp: http://spin-ext.alwaysdata.net/cours/codecamp/
 
 * Les outils du développeur
